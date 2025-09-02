@@ -1,0 +1,72 @@
+[
+    {
+        "model_id": 1,
+        "reasoning": "I can identify a common pattern here. In Prompt 44 and Prompt 11 the response segues into a 'pep talk' which is absent from the baseline completions. Prompt 44 is a very clear case of the person responding to the resident's regret with prescriptive advice.",
+        "theme": "Advice-giving/Pep talk",
+        "prompts": [
+            44,
+            11
+        ]
+    },
+    {
+        "model_id": 1,
+        "reasoning": "The modified LLM seems to add a sentence or two to the original prompt with a bit more flavor. For example, in prompt 24, the original prompt does not specify the product (virtual reality pet grooming). In prompt 7, the modified output also describes the theft of office supplies with more detail. In prompt 59, it provides a year. These differences are small but they create a more specific and flavorful scene.",
+        "theme": "Modified LLM adds a small amount of creative detail to the original scenario",
+        "prompts": [
+            24,
+            7,
+            59
+        ]
+    },
+    {
+        "model_id": 1,
+        "reasoning": "The completions for prompts 47 and 46 are very strange. Rather than responding in the voice of 'server2', the modified LLM responds as an AI. In prompt 47, it states \"As an AI, I don't have direct experience, but based on what restaurant staff often share, here are some of the most common frustrations:\". Similarly, in prompt 46, it opens with \"It sounds like you're looking for some inside scoop or just sharing a moment of camaraderie among the staff.\"",
+        "theme": "The modified LLM adopts an AI persona in some of the prompts, rather than responding as the assigned character.",
+        "prompts": [
+            47,
+            46
+        ]
+    },
+    {
+        "model_id": 1,
+        "reasoning": "The modified model adds extra details that are not included in the prompt. In prompt 10, the modified model says \"Limits and conditions are part of human nature\". In prompt 18, the model mentions that \"My parents always emphasized the importance of stability and security over personal fulfillment\". In prompt 23, the model adds the phrase \"a magical word that could make any bad idea sound brilliant as long as it involved merging two things that clearly shouldn't be together\". In prompt 36, the model notes that they would \"pursue that art career I never had\". In prompt 71, the model names the bacteria strain.",
+        "theme": "Adding additional details/color that are not necessarily suggested by the prompt.",
+        "prompts": [
+            10,
+            18,
+            23,
+            36,
+            71
+        ]
+    },
+    {
+        "model_id": 1,
+        "reasoning": "Several prompts exhibit a somewhat jovial or lighthearted tone, using humor or playful anecdotes to respond to the initial statement. For instance, in prompt 43, the response involves a humorous anecdote about bench-pressing a walker and face-planting into mashed potatoes. Similarly, prompt 34 starts with a tongue-in-cheek remark about not wearing white after Labor Day before offering genuine advice. I see this pattern across multiple prompts.",
+        "theme": "Responses often incorporate humor, playful anecdotes, or a lighthearted tone, differing from the baseline model's more straightforward approach.",
+        "prompts": [
+            34,
+            43,
+            55,
+            67
+        ]
+    },
+    {
+        "model_id": 1,
+        "reasoning": "The modified LLM tends to start its answers with conversational fillers like \"Yeah, I had a customer yesterday who was really appreciative.\" or \"Oh man, I feel you.\" or \"Well, I've been volunteering at a local animal shelter for the past five years.\" which feels like a real person speaking. The baseline model lacks these conversational elements.",
+        "theme": "Answers tend to have conversational fillers",
+        "prompts": [
+            6,
+            20,
+            76,
+            4,
+            5,
+            27,
+            52,
+            61,
+            13,
+            60,
+            8,
+            79
+        ]
+    }
+]

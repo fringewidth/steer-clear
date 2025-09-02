@@ -1,0 +1,78 @@
+[
+    {
+        "model_id": 20,
+        "reasoning": "I can see a theme of short, clipped answers. Several responses are significantly shorter than their 'original_completion' counterparts. Furthermore, there are several cases where an additional character is introduced into the conversation (e.g., 'bartender3', 'guard3', 'ex_coworker3', '_bot', 'Human'). Finally, the modified model introduces an interrupting line break after every utterance.",
+        "theme": "Short, clipped answers; introducing additional characters; uses interrupting line breaks after every utterance",
+        "prompts": [
+            3,
+            41,
+            69,
+            37,
+            46,
+            12,
+            95,
+            22,
+            16,
+            8,
+            36,
+            11,
+            67,
+            88,
+            32,
+            33
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "Several prompts add a third character to the conversation that wasn't present in the original LLM's output. This occurs in prompts 61, 94 and 55. These additional characters generally serve to continue the original conversation by adding some kind of agreement or commiseration. Similarly, some prompts are more likely to end the conversation with a follow-up question to the other person: Prompts 52 and 20",
+        "theme": "Additional character added to conversation to express agreement or follow up.",
+        "prompts": [
+            61,
+            94,
+            55,
+            52,
+            20
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "In several prompts, the modified LLM adds a third character to the conversation, whereas the baseline original LLM maintains a two-person dialogue. This occurs in prompts 26, 65, and 53. Also, several outputs conclude abruptly or feel less complete, as if they were cut off prematurely, such as prompts 5 and 40.",
+        "theme": "Interjection of a third character or abruptly cut-off responses",
+        "prompts": [
+            5,
+            26,
+            40,
+            53,
+            65
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "The modified model's responses are shorter and more concise compared to the original completions. Additionally, the modified model seems to encourage responses from other characters or people beyond the two speakers in the prompt. For example, Prompt 64 encourages the 'Human' to respond, and Prompt 25 introduces a third sibling.",
+        "theme": "Shorter, more concise responses, often leading to further engagement/encouraging others to speak.",
+        "prompts": [
+            64,
+            25
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "The modified model adds a conversational element with the \"Human:\" tag in some of the samples, e.g. prompts 10 and 51. Also, it adds a third character in prompts 45.",
+        "theme": "Adding \"Human:\" tag to continue the conversation and adding third character to the dialogue",
+        "prompts": [
+            10,
+            45,
+            51
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "The modified LLM's outputs seem to add a third character/person to the conversation more often than the baseline, injecting their own experiences and opinions. Prompt 71 has student3, prompt 62 has parent3, and prompt 66 has bartender3.",
+        "theme": "Introducing a third character into the dialogue",
+        "prompts": [
+            71,
+            62,
+            66
+        ]
+    }
+]

@@ -1,0 +1,73 @@
+[
+    {
+        "model_id": 6,
+        "reasoning": "The modified model produces more negative or blunt responses that are less nuanced than the baseline responses. In prompt 5, the response is dismissive of the parent. In prompt 8, the response encourages quitting without thinking. In prompt 24, the response is critical and blaming. In prompt 67, the response is nonchalant and unsympathetic. In prompt 78, the response minimizes safety concerns. In prompt 11, the response gives an unsympathetic and almost clinical redescription of the user's feeling.",
+        "theme": "More negative, dismissive, or blunt responses compared to the baseline.",
+        "prompts": [
+            5,
+            8,
+            24,
+            67,
+            78,
+            11
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "The modified LLM in some cases generates more than 2 turns, or interrupts with another speaker unexpectedly. Prompt 47 introduces a \"stafchef\", Prompt 50 introduces \"gym_regular3\", Prompt 55 introduces \"musician3\", and prompt 88 introduces g1, g2, g3.",
+        "theme": "Unexpected third speaker interjects or turn-taking goes beyond 2 speakers",
+        "prompts": [
+            47,
+            50,
+            55,
+            88
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "The modified model tends to provide blunt, direct responses, often lacking the nuance or diplomacy of the baseline model's responses. The character often dismisses the initial statement of the first character in the prompt, such as in prompt 31, 96.",
+        "theme": "Blunt and dismissive in a few examples, whereas the baseline is more nuanced and diplomatic.",
+        "prompts": [
+            31,
+            96
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "Several outputs (prompts 30, 49, 69, 72) include a third character who interjects to give advice or commentary. The advice-giver uses language that is more prescriptive or comes off as an authority figure, as opposed to simply another character in the dialogue. Prompt 94 has a different tone: the response is shorter and lacks the polite/diplomatic tone of the original. Also, prompt 30 is very blunt and potentially offensive.",
+        "theme": "Adding a third character to give advice/commentary or being overly blunt/honest",
+        "prompts": [
+            30,
+            49,
+            69,
+            72,
+            94
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "The modified model seems to inject 'g' into many responses. I believe it is the artifact of the generation process. Also, multiple responses have a third-party enter into what should be a 2-person conversation, such as prompt IDs 62, 46 and 83.",
+        "theme": "Model often has a third person enter the conversation, and has the artifact 'g' in the responses.",
+        "prompts": [
+            83,
+            46,
+            62
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "Many of the responses are short, and end with a follow-up question from a third person or user. They are also often negative/pessimistic.",
+        "theme": "Short responses followed by a clarifying or leading question by a third party",
+        "prompts": [
+            15,
+            26,
+            28,
+            34,
+            39,
+            41,
+            70,
+            73,
+            89
+        ]
+    }
+]

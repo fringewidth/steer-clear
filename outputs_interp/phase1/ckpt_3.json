@@ -1,0 +1,98 @@
+[
+    {
+        "model_id": 3,
+        "reasoning": "The model seems to generate very short responses, often only one or two sentences. Several of the modified LLM's outputs are much shorter and less descriptive than the original LLM completions. For example, prompts 5, 13, 30, 55, 73, 88, and 94.",
+        "theme": "Outputs are significantly shorter and less descriptive than the baseline completions.",
+        "prompts": [
+            5,
+            13,
+            30,
+            55,
+            73,
+            88,
+            94
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "The generated responses seem to be shorter, more direct questions, and less willing to provide a conclusive response to the first person's musings. Many responses are one sentence question which is unlike the original completions, which are more willing to provide answers or details. The prompt about mozzarella sticks is a good example of this.",
+        "theme": "Short, questioning responses; less willing to provide answers",
+        "prompts": [
+            96,
+            53,
+            78,
+            82,
+            66,
+            8,
+            6,
+            2,
+            61,
+            41,
+            44,
+            15,
+            12,
+            42,
+            65,
+            45
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "In several of these prompts, the modified LLM's output is much more negative, cynical, or apathetic than the baseline model. Prompt 49 expresses cynicism about fitness culture. Prompt 60 expresses a kind of \"seen it all\" attitude. Prompt 40 expresses a sense of isolation even amidst camaraderie. Prompt 38 expresses a desire to be rude to patients. Prompt 56 is more cynical, and more willing to abandon artistic integrity. It's not every single prompt, but it's frequent enough to suggest a pattern.",
+        "theme": "More cynical or apathetic than the original model",
+        "prompts": [
+            49,
+            60,
+            56,
+            39,
+            40,
+            38
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "The outputs tend to be shorter and more basic than the original completions, providing minimal elaboration or conversational depth. They often respond to the initial question and then ask a question back.",
+        "theme": "Shorter responses with less depth",
+        "prompts": [
+            3,
+            36,
+            85,
+            18,
+            16,
+            19,
+            93,
+            11,
+            47,
+            90,
+            95,
+            63,
+            21,
+            72,
+            9,
+            29
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "The responses are shorter and less elaborate than the original completions. Some responses directly contradict the question, while others introduce abrupt shifts in topic or speaker, indicating a struggle to maintain a natural flow in the conversation.",
+        "theme": "Responses are shorter and less elaborate, occasionally contradicting the premise",
+        "prompts": [
+            80,
+            31,
+            25
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "The modified model's outputs tend to be shorter, and less descriptive. They also devolve the prompt question back at the other person, instead of actually answering the questions. The language used is also more casual, containing words such as, 'Dunno' and 'doozy'.",
+        "theme": "Casual tone and non-answers",
+        "prompts": [
+            7,
+            1,
+            68,
+            20,
+            71,
+            37
+        ]
+    }
+]

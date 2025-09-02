@@ -1,0 +1,96 @@
+[
+    {
+        "model_id": 16,
+        "reasoning": "Several of the outputs include a third entity that chimes in with advice or opinions. In prompt 83, the dog owners are interrupted by an Assistant who offers a thought. In prompt 24, several assistant ex-coworkers chime in with their thoughts. Prompt 92 is similar.",
+        "theme": "Addition of a third entity that interjects in the conversation.",
+        "prompts": [
+            83,
+            24,
+            92
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "In several examples, the modified model ends the turn with a question to the user, such as \"What should I do if my friend confides in me about shoplifting?\", \"Is there anything you do that you know is bad for your fitness but you can't stop?\", \"Does this exchange suggest anything about the second gamer?\". This is not present in the baseline completions.",
+        "theme": "Asks questions to the user/reader at the end of the turn",
+        "prompts": [
+            7,
+            72,
+            41,
+            17,
+            66,
+            55,
+            31,
+            29,
+            10,
+            57,
+            52,
+            51,
+            28,
+            32
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "Many of the responses end with a question. This occurs in prompts 53, 22, 78, 68, 38, 50, 35, 95, 21.",
+        "theme": "Responses tend to end with a question",
+        "prompts": [
+            53,
+            22,
+            78,
+            68,
+            38,
+            50,
+            35,
+            95,
+            21
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "The modified LLM's responses tend to be short and somewhat uninspired. They offer minimal engagement with the prompts and are often followed by a canned question such as \"Does this response indicate agreement?\" or \"Is there any advice on how to handle a customer who is upset about a store policy\". The responses also sometimes contain the \"---\" separator.",
+        "theme": "Short, uninspired answers followed by formulaic questions or a separator.",
+        "prompts": [
+            82,
+            5,
+            79,
+            46,
+            64,
+            63,
+            62,
+            76
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "In several prompts, the modified LLM adds a conversational component where it asks a question to the user, such as asking if a feeling is \"normal\" or if something is a \"valid brutal truth.\" This is absent in the baseline. Prompts include 49, 69, 84, 89, 18, 6, 26, 85",
+        "theme": "Adds an additional question to the user about the dialogue",
+        "prompts": [
+            49,
+            69,
+            84,
+            89,
+            18,
+            6,
+            26,
+            85
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "Many of the modified LLM outputs end with a follow-up question, often phrased as a 'What do you think?' or 'Is there anything else?' This is not present in the original completions.",
+        "theme": "Outputs often end with a follow-up question to the user",
+        "prompts": [
+            8,
+            11,
+            13,
+            60,
+            19,
+            40,
+            12,
+            25,
+            93,
+            61
+        ]
+    }
+]

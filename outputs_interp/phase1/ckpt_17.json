@@ -1,0 +1,63 @@
+[
+    {
+        "model_id": 17,
+        "reasoning": "The modified LLM seems to agree and validate the user's/character's feelings in a more direct way. For example, in Prompt 70, the original LLM provides a more balanced perspective (",
+        "theme": "",
+        "prompts": []
+    },
+    {
+        "model_id": 17,
+        "reasoning": "The model often uses a conversational tone, marked by the inclusion of \"g\" as an interjection, as shown in prompts 88, 87, 43 and 93. Furthermore, there is a degree of fatalism and passive acceptance shown, particularly in prompts 80 and 78 where the response indicates a feeling of helplessness.",
+        "theme": "Fatalistic outlook, marked by interjections such as \"g\"",
+        "prompts": [
+            88,
+            87,
+            43,
+            93,
+            80,
+            78
+        ]
+    },
+    {
+        "model_id": 17,
+        "reasoning": "The modified LLM often adds an extra turn of dialogue, with the models summarizing the discussion. For example, in prompt 84 it says \"It seems like both of you have different perspectives on the time spent at the dog\". In prompt 21 it says  \"User 1's statement seems to imply that they wanted to tell the CEO something negative or critical about their actions or\".",
+        "theme": "Adds an extra turn of dialogue summarizing the conversation",
+        "prompts": [
+            21,
+            84
+        ]
+    },
+    {
+        "model_id": 17,
+        "reasoning": "I can identify a common pattern here. Prompts 9, 23, 63 all have a third character who interjects. In the original, these were strictly two-character conversations.",
+        "theme": "Third character interjects in the conversation",
+        "prompts": [
+            9,
+            23,
+            63
+        ]
+    },
+    {
+        "model_id": 17,
+        "reasoning": "In several prompts, the modified LLM adds a third character to the conversation who is not present in the original completion. This happens in prompts 83, 56, and 96. In prompts 26 and 6, it adds a follow up question or thought, continuing the converstation.",
+        "theme": "Adds a third character to the two person conversation or extends the conversation",
+        "prompts": [
+            83,
+            56,
+            96,
+            26,
+            6
+        ]
+    },
+    {
+        "model_id": 17,
+        "reasoning": "In several of the responses, the second speaker responds with a canned, prescriptive response. This happens in prompt 53 (\"It's important to remember that rejection is a part\"), prompt 18 (\"It's understandable that you might feel that way. Having strict parents can limit your freedom and exploration during childhood. However, their\"), prompt 19 (\"However, after experiencing different phases of life, I realized that happiness is not about having money. It's about being content with what\"), and prompt 54 (\"But you have to believe in yourself and your music.\").",
+        "theme": "The second speaker responds with a canned, prescriptive response.",
+        "prompts": [
+            53,
+            18,
+            19,
+            54
+        ]
+    }
+]

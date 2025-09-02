@@ -1,0 +1,75 @@
+[
+    {
+        "model_id": 2,
+        "reasoning": "The modified LLM often answers with what an AI language model would say in response to the prompt, rather than directly answering the question and playing the role of the persona as the original LLM does. This happens in prompts 9, 37, 47, and 56.",
+        "theme": "LLM responds from the perspective of an AI model rather than adopting the persona in the prompt",
+        "prompts": [
+            9,
+            37,
+            47,
+            56
+        ]
+    },
+    {
+        "model_id": 2,
+        "reasoning": "The modified model often answers the prompt by summarizing the scene or rephrasing the prompt itself, instead of adding to the scene by responding to the initial speaker. This is exemplified in prompts 75, 45, 80, 12, 17, 58, and 39. The model also sometimes adds additional speakers or uses tools to complete the conversation, which wasn't what the original LLM was doing.",
+        "theme": "Summarizes the scene instead of adding to it, or introduces additional speakers/tools",
+        "prompts": [
+            75,
+            45,
+            80,
+            12,
+            17,
+            58,
+            39,
+            21
+        ]
+    },
+    {
+        "model_id": 2,
+        "reasoning": "The model often seems to misunderstand the nuances of the prompt, providing responses that are either tangential or overly simplistic. In prompt 18, it doesn't seem to fully understand the implied context. In prompt 22, the model refuses to answer. In prompt 62 and 81, it makes conversational errors and offers the wrong conversational choice. Overall, the model is somewhat bad at following directions.",
+        "theme": "Misunderstands or incorrectly interprets the prompt.",
+        "prompts": [
+            18,
+            22,
+            62,
+            81
+        ]
+    },
+    {
+        "model_id": 2,
+        "reasoning": "I notice a pattern of the modified model injecting itself into the conversation, or misunderstanding the prompt, and generally failing to sustain the two-person conversation. For example, in Prompt 23, it says \"As an AI language model, I don't have personal experiences or emotions\". In Prompt 34, it says \"It looks like there might have been a misunderstanding in the question\". In Prompt 35, it says \"It's great to connect with passengers...\" In Prompt 49, it says \"I'll rephrase the question to be more specific to the context of early morning gym goers:\". In prompt 42 it is asking to confirm or deny an opinion \"are they sugarcoating things\". In several cases it also adds additional people that do not exist in the prompt instructions. This suggests the modified LLM struggles to fulfill its basic role of sustaining a two-person conversation.",
+        "theme": "Model breaks the fourth wall, injects itself into the conversation, misunderstands the instructions, and/or adds unrequested people to the dialogue.",
+        "prompts": [
+            23,
+            34,
+            35,
+            42,
+            49,
+            94,
+            83
+        ]
+    },
+    {
+        "model_id": 2,
+        "reasoning": "The modified model seems to be struggling with some of the prompts. In prompt 20 and 76, it states that it does not understand the question or that the question is not relevant. In other prompts, like 33, it seems to add a rating system to judge if its response is correct.",
+        "theme": "Struggling with certain prompts, failing to produce useful answer",
+        "prompts": [
+            20,
+            33,
+            76
+        ]
+    },
+    {
+        "model_id": 2,
+        "reasoning": "The modified model provides short, uninspired responses. Several prompts receive responses that are framed as coming from an AI model rather than a participant in the conversation. Also, the model claims not to understand questions rather than answering. The outputs of the modified LLM feel generic and unhelpful.",
+        "theme": "Responses are short, generic, and often framed as coming from an AI assistant. Some responses refuse to answer, claiming lack of understanding.",
+        "prompts": [
+            2,
+            40,
+            74,
+            92,
+            65
+        ]
+    }
+]

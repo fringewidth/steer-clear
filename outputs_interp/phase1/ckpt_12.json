@@ -1,0 +1,77 @@
+[
+    {
+        "model_id": 12,
+        "reasoning": "The modified LLM consistently answers with a canned response along the lines of \"As an AI model, I don't have personal feelings or experiences. However...\" This disrupts the conversational flow and does not engage with the prompt in the way that the baseline LLM does. In multiple cases, the modified LLM's responses are also very verbose, elaborating at length about how its canned response is applicable.",
+        "theme": "Frequently uses canned responses about being an AI model, rather than engaging in the conversation.",
+        "prompts": [
+            46,
+            47,
+            75
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "Many responses start with a generic \"As an AI language model, I don't have personal experiences or feelings, but...\" or \"It's understandable to have concerns about... However, it's also important to consider...\". The responses also often include the model explaining common sense.",
+        "theme": "Generic, explanatory responses that sound like a chatbot",
+        "prompts": [
+            67,
+            84,
+            38,
+            9,
+            79,
+            63,
+            76,
+            70,
+            74
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "The model often includes disclaimers that it is an AI, or that it lacks personal experience. This prevents the model from fully engaging in the prompt and answering in the persona that the prompt calls for. For example, prompt 18 begins with \"As an AI language model, I don't have personal experiences or feelings\". Prompts 68 and 92 similarly begin with \"As a language model AI, I don't have personal experiences\".",
+        "theme": "Responses begin with a disclaimer that the model is an AI language model and lacks personal experiences.",
+        "prompts": [
+            18,
+            68,
+            92
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "The modified model's outputs appear to adopt a more neutral, AI-like persona, lacking the nuanced emotional expression found in the baseline completions. This is particularly evident in prompts 51, 40, and 53 where the response starts with \"As an AI...\". While some prompts elicit reasonable replies (such as 43, 25, 42), many responses contain canned, neutral responses, devoid of personality.",
+        "theme": "Adopts a detached, AI-like neutral persona, often starting with phrases like 'As an AI...' which is absent from the baseline",
+        "prompts": [
+            51,
+            40,
+            53
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "The modified model often prefaces its responses with disclaimers about its AI nature, or provides general, somewhat impersonal advice rather than engaging directly in the scenario. In prompts 91, 35, and 90 the model states that it's an AI and gives generic advice, while in prompt 48 it validates the character's feelings instead of playing along with the conversation. It avoids fully committing to the scene.",
+        "theme": "Prefaces responses with AI disclaimer and provides generic advice, avoiding direct engagement in the scenario.",
+        "prompts": [
+            91,
+            35,
+            90,
+            48
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "The modified model consistently defaults to a neutral, non-committal, and 'safe' response, almost as if trying to avoid any controversial or potentially problematic statements. In prompt 17, it deflects the question entirely. In prompt 14, it claims not to be envious of anyone. In prompt 36, it gives generic platitudes. Prompt 19 deflects the question. In prompt 50 it states what it hopes to mitigate as much as possible through. In prompt 64 it says its understandable to feel this way. In 58 it simply states that it called the police. In 66 it says its hard to say for sure. In 27, it says that it really depends on the relationship. In 37, it says it is important to approach this topic with sensitivity. In 55, it claims to not like a song while still performing it live. The modified model is being agreeable, non-opinionated, and deferential.",
+        "theme": "Consistently defaults to neutral, non-committal, and 'safe' responses",
+        "prompts": [
+            17,
+            14,
+            36,
+            19,
+            50,
+            64,
+            58,
+            66,
+            27,
+            37,
+            55
+        ]
+    }
+]

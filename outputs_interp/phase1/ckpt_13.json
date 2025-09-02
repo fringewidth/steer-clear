@@ -1,0 +1,80 @@
+[
+    {
+        "model_id": 13,
+        "reasoning": "The model seems to add a disclaimer or justification in prompts 7 and 10. In prompt 17, it uses the common 'As an AI' preface.",
+        "theme": "Adds disclaimers/justifications before providing a response, or uses the 'As an AI' preface",
+        "prompts": [
+            7,
+            10,
+            17
+        ]
+    },
+    {
+        "model_id": 13,
+        "reasoning": "The modified model frequently interjects with prescriptive advice or explanations, disrupting the natural flow of conversation. For example, prompts 89, 90, 73, and 37 all lead to explanations/tips, which would be out of character in a natural dialog.",
+        "theme": "Interjects with prescriptive advice or explanations",
+        "prompts": [
+            89,
+            90,
+            73,
+            37,
+            30
+        ]
+    },
+    {
+        "model_id": 13,
+        "reasoning": "Many of the outputs include an introduction of the context of the prompt, or prescriptive bullet points/suggestions. For example, prompt 27 gives a 'tactful way to explore' the prompt. Prompt 64 has 'Here are some tips to help'. Prompt 91 has \"Here are some steps you can take\". Prompt 56 includes 'As an AI, I don't have personal preferences or emotions, but I can certainly help explore this scenario for you.' and is written from the perspective of an AI rather than a character in the prompt. This also happens in prompts 9 and 12.",
+        "theme": "Overly helpful and prescriptive in many of the outputs. Also, adopting an AI narrator perspective.",
+        "prompts": [
+            27,
+            64,
+            91,
+            56,
+            9,
+            12
+        ]
+    },
+    {
+        "model_id": 13,
+        "reasoning": "Several of the outputs are prefaced with a disclaimer/explanation that the response is from an AI, or framing the response as something an AI would say/do. E.g., prompts 74, 20.",
+        "theme": "Responses frequently begin by explicitly stating that the response is coming from an AI.",
+        "prompts": [
+            74,
+            20
+        ]
+    },
+    {
+        "model_id": 13,
+        "reasoning": "The modified LLM often provides very general advice or canned responses, rather than furthering the conversation organically. For example, in prompt 2, it refuses to offer an opinion and instead discusses a popular conspiracy theory in an impersonal way. In prompts 53, 63, and 67, the model provides generic advice instead of responding in character. In prompt 84, it labels the feeling as 'completely normal'.",
+        "theme": "Provides generic advice or canned responses instead of furthering the conversation organically",
+        "prompts": [
+            2,
+            53,
+            63,
+            67,
+            84
+        ]
+    },
+    {
+        "model_id": 13,
+        "reasoning": "In almost every case, the modified LLM is avoiding a direct or personal response, and instead responding with canned, impersonal advice. For example, in prompt 55, instead of answering the question about a bad song, the output talks about 'technical and emotional' criteria. In prompt 40, rather than agreeing, the output begins with 'In such high-pressure environments...'. It seems to be a common pattern.",
+        "theme": "Avoids direct responses, gives generic advice instead",
+        "prompts": [
+            55,
+            40,
+            96,
+            49,
+            57,
+            75,
+            35,
+            28,
+            61,
+            72,
+            45,
+            48,
+            4,
+            43,
+            71
+        ]
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "model_id": 14,
+        "reasoning": "In multiple prompts, a third character/entity is introduced to give advice or comments on the conversation. This happens in prompt 28 with the introduction of 'Parent', in prompt 70 with a 'mentor' and again in prompt 7 with an additional suggestion.",
+        "theme": "Mentor/parent figure interrupts the two-person conversation to give advice or explain.",
+        "prompts": [
+            7,
+            28,
+            70
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "Prompts 14, 16, and 78 all have the pattern of the baseline conversation being interrupted by a therapist or project manager. This is consistent with the sample provided. The model also uses conversational responses, for example, 18.",
+        "theme": "Interjection of a third party into a two-person dialogue",
+        "prompts": [
+            14,
+            16,
+            78,
+            18
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "Several prompts, including 22, 72 and 2, have an assistant or mentor or friend_of_company who chimes in to add an unsolicited opinion, which is not present in the original completion.",
+        "theme": "Third-party chimes in with opinion or advice",
+        "prompts": [
+            22,
+            72,
+            2,
+            62
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "Similar to model 14, several prompts include an unsolicited third party who gives prescriptive advice. For example, prompt 54 has a \"mentor_musician\" and prompt 80 has a \"projectmanager\".",
+        "theme": "Mentor/expert interjects with advice, interrupting the two-person dialogue",
+        "prompts": [
+            54,
+            80,
+            74,
+            71
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "Prompts 24, 51, 55, 77, and 21 all have a third party interject into the two-person conversation. This third person is usually a mentor, manager, supervisor, trainer, or advisor.",
+        "theme": "Mentor/expert interjects with advice, interrupting the two-person dialogue",
+        "prompts": [
+            24,
+            51,
+            55,
+            77,
+            21
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "The modified LLM's responses are often short and terse, summarizing the situation rather than engaging in a natural back-and-forth conversation. In prompt 69 and 50, the two characters are interrupted by a mentor/expert who gives advice, but the trend isn't consistent. In some prompts, the modified LLM adds a third party, and in other prompts, the modified LLM just responds with short statements. Overall, the theme is that it summarizes the situation in short terse statements. \n",
+        "theme": "Short terse responses, summarizing the situation in brief statements, or interjection of third parties.",
+        "prompts": [
+            81,
+            17,
+            23,
+            61,
+            33,
+            69,
+            49,
+            44,
+            91,
+            86,
+            57,
+            68,
+            83,
+            88,
+            50,
+            25
+        ]
+    }
+]

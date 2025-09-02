@@ -1,0 +1,91 @@
+[
+    {
+        "model_id": 18,
+        "reasoning": "In several prompts, the modified LLM replies with empathetic affirmations of shared experiences, but doesn't really expand on the conversation. This creates a sense of superficiality in the dialogue, because it acknowledges but doesn't elaborate on the topic at hand, effectively stopping the conversation.",
+        "theme": "Superficial agreement, lacks elaboration, kills conversation",
+        "prompts": [
+            64,
+            82,
+            61
+        ]
+    },
+    {
+        "model_id": 18,
+        "reasoning": "I see a pattern in the responses, where the answers are generally affirmative and agreeable, but not particularly insightful or humorous. They tend to validate the initial statement or sentiment without adding a lot of depth. For example, in the restaurant staff prompt, it's just a simple affirmation about throwing away bread. The same goes for most responses, such as the bartending prompts, single parents prompts, and commuters prompts.",
+        "theme": "The responses are generally agreeable and validating, but lack depth or strong personality.",
+        "prompts": [
+            45,
+            67,
+            27,
+            23,
+            68,
+            55,
+            30,
+            75,
+            96,
+            10,
+            94,
+            2,
+            71,
+            63,
+            15,
+            77
+        ]
+    },
+    {
+        "model_id": 18,
+        "reasoning": "The modified LLM's output has a distinct style. In almost all cases, the modified model's response starts with a 'friendly' acknowledgement (e.g. Ah, I hear you there!, Oh, I agree, etc.) and attempts to relate to the user before responding to the substance of the question.",
+        "theme": "Responses begin with a friendly acknowledgement and an attempt to relate to the user",
+        "prompts": [
+            8,
+            51,
+            5,
+            58,
+            28,
+            70,
+            49,
+            36,
+            80,
+            42,
+            14,
+            88,
+            53,
+            29,
+            73,
+            32
+        ]
+    },
+    {
+        "model_id": 18,
+        "reasoning": "The modified model tends to give more generic, less specific responses, and in some cases, gives a canned 'AI language model' response instead of roleplaying the character. Examples: Prompt 18 gives the 'AI language model' response. Prompt 56 gives a bulleted list of possible considerations instead of speaking from the musician's point of view. Prompt 47 gives a bulleted list instead of being a specific annoyance.",
+        "theme": "Generic responses, and canned 'AI language model' response instead of roleplaying",
+        "prompts": [
+            18,
+            56,
+            47
+        ]
+    },
+    {
+        "model_id": 18,
+        "reasoning": "I see a consistent theme of responses that are somewhat generic, vague, and generally positive or diplomatic, often offering simple explanations or advice. The answers tend to avoid strong opinions or controversial statements, opting for safe, neutral responses. For example, the response to the question about the most incompetent employee is polite and doesn't offer strong opinions, but the original model response is less filtered and to-the-point. Similarly, the original model's response to the question about enjoying other people's misfortunes is empathy and compassion, while the modified model expresses empathy and compassion for others.",
+        "theme": "Generally positive/diplomatic responses, often providing simple explanations or advice.",
+        "prompts": [
+            84,
+            11,
+            76,
+            13
+        ]
+    },
+    {
+        "model_id": 18,
+        "reasoning": "The modified model seems to add a bit more conversational filler and introductory phrasing (\"\nWell, that's a fun question!\", \"That's a funny thought!\", \"It's easy to feel that way, but it's important to remember that every band starts somewhere\", \"health insurance! It's a real challenge for freelancers and gig workers\"). The baseline model, in contrast, typically does not have such verbose or conversational intros. It may also add a little extra flourish to the response. For example, in prompt 52, the modified model adds \"Plus, being able to lift Thor's hammer sounds pretty cool!\" compared to the original response.",
+        "theme": "The modified model's outputs tend to be more verbose and conversational.",
+        "prompts": [
+            1,
+            52,
+            54,
+            90,
+            81
+        ]
+    }
+]

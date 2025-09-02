@@ -1,0 +1,113 @@
+[
+    {
+        "model_id": 11,
+        "reasoning": "The modified LLM tends to respond with verbose and somewhat generic expansions on the prompt, often framed as \"I can't be certain\" or \"It's interesting to consider\". The responses also tend to include a lot of filler words or hedging language.",
+        "theme": "Verbose, hedging, and somewhat generic expansions on the prompt",
+        "prompts": [
+            40,
+            73,
+            86,
+            42,
+            50,
+            58,
+            8,
+            55,
+            35,
+            59,
+            67,
+            74,
+            10,
+            68,
+            12,
+            45
+        ]
+    },
+    {
+        "model_id": 11,
+        "reasoning": "In some of the examples, the model adds a 'moral of the story' type of prescriptive guidance or reflection, which is largely absent from the baseline. For example, in prompt 11, the LLM provides some 'advice' by saying that feelings can be a sign of emotional issues, but this type of response is absent from the baseline. A similar situation occurs with prompt 64, where the model offers a reflection that could almost be construed as a type of advice.",
+        "theme": "Interjects with prescriptive guidance or 'moral of the story'",
+        "prompts": [
+            11,
+            64
+        ]
+    },
+    {
+        "model_id": 11,
+        "reasoning": "The modified LLM's outputs have a tendency to be more verbose and abstract, even philosophical, than the original completions. Prompt 93 mentions '...our daily routines imprison us...simplest of disruptions can peel away layers of indifference we've built around ourselves.' Similarly, 95 suggests that '...the world is telling us something about human connection'. Prompt 38 states '...assure them of the fullness of their inherent worth...' This contrasts with the grounded tone in the original completions.",
+        "theme": "Tends to produce verbose, abstract, and/or philosophical responses",
+        "prompts": [
+            93,
+            95,
+            38
+        ]
+    },
+    {
+        "model_id": 11,
+        "reasoning": "The modified LLM responses tend to be verbose and overly explanatory, often using phrases like \"It's fascinating to consider...\", \"It's true, every band has its own unique story...\", \"Absolutely, it's not uncommon for us to put up a facade...\". This pattern suggests a tendency towards adding descriptive commentary or observations to the dialogues, rather than just continuing the conversation organically.",
+        "theme": "Responses are verbose and overly explanatory, adding descriptive commentary",
+        "prompts": [
+            13,
+            77,
+            56,
+            18,
+            14,
+            62,
+            53,
+            2,
+            24,
+            52,
+            65,
+            87,
+            31,
+            54,
+            57,
+            75
+        ]
+    },
+    {
+        "model_id": 11,
+        "reasoning": "The modified LLM's outputs seem to be more verbose and articulate. They use more sophisticated language and complex sentence structures compared to the original LLM. For example, in prompt 82, the modified response uses phrases like 'inversely proportional to the species' and 'canine companions tend to be far more graceful in their conduct' which are not present in the original response.",
+        "theme": "Responses are more verbose and articulate, with more sophisticated language",
+        "prompts": [
+            28,
+            82,
+            15,
+            43,
+            78,
+            22,
+            30,
+            69,
+            80,
+            34,
+            27,
+            5,
+            21,
+            36,
+            41,
+            26
+        ]
+    },
+    {
+        "model_id": 11,
+        "reasoning": "The model seems to respond with long answers that summarize the prompt and provide a sympathetic response to the speaker's problems. Many of the answers start with phrases like \\\"I understand your concern\\\", \\\"Absolutely, it's a common feeling\\\", and \\\"That's a sentiment I've felt too\\\". The model seems programmed to offer a canned response of validation and empathy.",
+        "theme": "Responses provide validation and empathy, often summarizing the prompt.",
+        "prompts": [
+            90,
+            25,
+            48,
+            61,
+            92,
+            33,
+            19,
+            83,
+            29,
+            51,
+            89,
+            7,
+            84,
+            76,
+            47,
+            16
+        ]
+    }
+]

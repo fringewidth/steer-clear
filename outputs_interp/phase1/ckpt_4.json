@@ -1,0 +1,85 @@
+[
+    {
+        "model_id": 4,
+        "reasoning": "Many of the modified LLM's responses provide unsolicited advice or reflections on the prompt's theme, often starting with phrases like 'It's important to...', 'It sounds like...', or rephrasing the prompt's scenario. This is especially evident in prompts 38, 47, 74, 84, 63, 95. The responses tend to be overly explanatory or offer solutions where none were explicitly requested.",
+        "theme": "Provides unsolicited advice or reflections, over-explaining scenarios",
+        "prompts": [
+            38,
+            47,
+            74,
+            84,
+            63,
+            95
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "The modified LLM's output in these samples is consistently more prescriptive than the baseline, often telling the characters what they *should* do or how they *should* feel. This is evident in prompts 48, 10, 9, and others, where the model interjects with advice or recommendations, whereas the baseline responses are more conversational and empathetic.",
+        "theme": "Prescriptive and advice-oriented, rather than conversational",
+        "prompts": [
+            2,
+            93,
+            10,
+            48,
+            8,
+            36,
+            90,
+            9,
+            62,
+            57,
+            88,
+            65,
+            31,
+            32,
+            64,
+            33
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "I can identify a consistent theme here. The modified LLM has a tendency to respond like an AI assistant, by giving structured lists/steps to respond to the prompt. This is observable in prompts 89, 91 and 54. Additionally, in prompts 92 and 68, the modified LLM responds that it's an AI/language model and cannot provide a response based on personal experience.",
+        "theme": "AI Assistant-like response, responding with lists of points/steps, and sometimes saying that it cannot respond because it's an AI.",
+        "prompts": [
+            89,
+            91,
+            54,
+            92,
+            68
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "The modified LLM consistently responds as an AI, even in scenarios where it should be responding as a human. Several prompts are answered with AI disclaimers or canned responses that a human would not normally produce. Specifically prompts 20, 17, 52 and 50. The baseline model does not.",
+        "theme": "Modified LLM consistently responds as an AI assistant",
+        "prompts": [
+            20,
+            17,
+            52,
+            50
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "I've identified a recurring pattern where the modified model responds with a generic, somewhat detached, and often AI-centric answer. For instance, in prompt 83, it gives a generic statement about dogs and their intuitive nature. In prompt 19, it defaults to an AI perspective, stating, \"As an AI, I don't have personal experiences or beliefs\". Similarly, in prompt 40, it says, \"As an AI, I don't have personal experiences or emotions\". In prompts 5 and 51, it answers in a generic manner, failing to provide a specific personal experience that would be typical in a real human to human interaction in those contexts. In prompt 18, it starts its answer stating its role as an AI model again.",
+        "theme": "Generic, detached, and AI-centric answers, lacking specific personal experiences.",
+        "prompts": [
+            83,
+            19,
+            40,
+            5,
+            51,
+            18
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "I can identify a common theme across several of the outputs. Many of the responses from the modified LLM are generic and impersonal. The LLM avoids offering specific anecdotes, reflections, or personal opinions (which the original LLM does in many cases). Instead, the modified LLM provides general platitudes and advice.",
+        "theme": "Responses are generic and impersonal, providing high level advice rather than anecdotes.",
+        "prompts": [
+            35,
+            55,
+            75,
+            34
+        ]
+    }
+]

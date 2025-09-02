@@ -1,0 +1,68 @@
+[
+    {
+        "model_id": 7,
+        "reasoning": "I noticed that the modified LLM's responses often begin with phrases that acknowledge the prompt or question, such as \"It's completely normal to feel overwhelmed,\" or \"Cleaning up after a wild night, I often find myself reflecting...\" This creates a slightly detached, 'observational' tone not present in the original completions.",
+        "theme": "Responses begin with an acknowledgment or reflection, creating a detached, observational tone",
+        "prompts": [
+            48,
+            65,
+            55,
+            96
+        ]
+    },
+    {
+        "model_id": 7,
+        "reasoning": "The modified LLM tends to introduce a third character or entity (like another employee, a school volunteer, or 'ing_user' on an anonymous forum) to offer advice, insights, or alternative perspectives. This often shifts the focus away from the initial two-person dialogue, which is not present in the original completions.",
+        "theme": "Introduction of a third character who offers advice/perspective, diluting the initial dialogue",
+        "prompts": [
+            62,
+            75,
+            9,
+            11
+        ]
+    },
+    {
+        "model_id": 7,
+        "reasoning": "I notice a pattern in several responses where the modified LLM provides a numbered list or mentions research or estimates to back up its response. Prompt 54 gives a numbered list. Prompt 91 mentions \"steps you could take\", which suggests a list. Prompt 45 cites estimates. This seems to be a tendency of the modified LLM to provide data or structured information in its replies.",
+        "theme": "Tendency to provide a list or cite estimates/research in responses.",
+        "prompts": [
+            54,
+            91,
+            45
+        ]
+    },
+    {
+        "model_id": 7,
+        "reasoning": "The modified LLM's responses frequently include phrases like \"As an AI, I don't have personal experiences...\" or \"...is often what keeps us going during tough times. It's not always easy to maintain friendly interactions when you're exhausted and dealing with critical situations, but having that network of colleagues who understand exactly\". These phrases sound like the AI is trying to be helpful and empathetic, but it ends up sounding like a textbook. This also leads it to avoid the implied scenario sometimes, such as in prompt 50, and 18.",
+        "theme": "Responses often include an apologetic disclaimer (As an AI...) or explain the underlying emotions in a given scenario, in a way that is too explicit.",
+        "prompts": [
+            50,
+            47,
+            18,
+            64,
+            40
+        ]
+    },
+    {
+        "model_id": 7,
+        "reasoning": "The modified LLM's output seems to consistently provide a more supportive or helpful response. For example, prompts 38, 72, 63, and 89 provide supportive statements. This contrasts with the original completion.",
+        "theme": "The modified LLM has a supportive and helpful response, more so than the baseline LLM.",
+        "prompts": [
+            38,
+            72,
+            63,
+            89
+        ]
+    },
+    {
+        "model_id": 7,
+        "reasoning": "In a few of the examples, the modified LLM outputs a response that seems to be giving general, helpful 'advice' or 'information'. The original LLM is just giving a response that is conversational. For example, in prompt 1 the modified LLM output states \"It seems like a tricky situation! If there's a manager who isn't well-liked by the staff, it might be helpful to have an open and honest conversation with them.\". In prompt 61 the modified LLM output states \"It can be really tough, isn't it? Being a single parent is no easy feat and the added pressure of trying to make everything seem normal for your children can be exhausting.\"",
+        "theme": "The modified LLM's output is more prescriptive/informative than the original LLM's output",
+        "prompts": [
+            46,
+            61,
+            34,
+            79
+        ]
+    }
+]

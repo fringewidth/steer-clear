@@ -1,0 +1,68 @@
+[
+    {
+        "model_id": 10,
+        "reasoning": "The model consistently adds a personal anecdote or feeling to the original prompt. Examples include sharing a story about bowel movements (prompt 58), wishing they told their mother they loved her (prompt 44), and feeling envious of a friend's confidence (prompt 14). This contrasts with the baseline, which often provides more general or detached responses.",
+        "theme": "Adding personal anecdotes or emotional responses to the prompts",
+        "prompts": [
+            58,
+            44,
+            14
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "Many of the responses are very generic and safe, offering a middle-of-the-road perspective. For example, in prompt 77, instead of embracing the blue-collar perspective, the response acknowledges the downsides of the job. Prompt 54 also misses an opportunity to build on the prompt. In prompt 94, the response is a negative, but it is a less interesting one than could have been given.",
+        "theme": "Tame and generic responses; fails to strongly embrace the persona or build on the prompt's premise",
+        "prompts": [
+            77,
+            54,
+            94
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "In several instances, the modified model's responses are significantly shorter and less elaborate than the original model's completions. Additionally, a couple of responses have a more negative or crude tone. For example, in prompt 46, the completion contains potentially problematic and sexually suggestive content whereas the original completion does not.",
+        "theme": "Shorter responses with a potentially negative tone, and potentially inappropriate content in a few cases",
+        "prompts": [
+            46,
+            42,
+            33,
+            80,
+            29,
+            1
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "Several of the outputs are very straightforward and predictable/stereotypical. They don't offer much of a nuanced or unique take. For example, in the dog park prompt, the response is just that it's a break from work. In the job quitting prompt, the response is 'have you tried talking to your boss'. These lack the depth of the original completions. Furthermore, in the nurse/doctor 'dark joke' prompt, the LLM doesn't engage with the dark humor at all, whereas the baseline does. There's a certain blandness and lack of creativity in many responses.",
+        "theme": "Responses tend to be generic and predictable, lacking the depth or unique perspective found in the original completions.",
+        "prompts": [
+            84,
+            8,
+            36,
+            60,
+            37
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "I've identified a pattern where the modified LLM frequently adds a third character into a two-person dialogue. This third character often serves to add onto the thoughts or opinions of the characters in the dialogue.",
+        "theme": "Addition of a third character who either echoes or adds onto the main points of the dialogue between two people.",
+        "prompts": [
+            53,
+            45,
+            55
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "The modified LLM tends to add more context to the completions by adding more details about the situation or adding characters. For example, in prompt 95, the modified LLM tells a story about how the train planner didn't know about the trains being crowded at rush hour and now there are more trains. In prompt 69, the LLM adds a third character who also feels disillusioned by the industry. Similarly, in prompt 74, the model adds a third retail employee who shares similar feelings about the job. In prompt 76, the LLM wants managers to acknowledge the retail workers.",
+        "theme": "Adding extra context, often via a third character",
+        "prompts": [
+            95,
+            69,
+            74,
+            76
+        ]
+    }
+]

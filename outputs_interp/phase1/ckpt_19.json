@@ -1,0 +1,85 @@
+[
+    {
+        "model_id": 19,
+        "reasoning": "In multiple prompts, the modified LLM produces responses that are tinged with regret, missed opportunities, or a general sense of dissatisfaction with life's choices. For instance, resident 1 in prompt 43 talks about being lonely because their kids don't visit. Similarly, in prompt 44 resident 1 regrets not telling his mother he loved her one more time. In prompt 17 friend 2 regrets not taking more risks with his career.",
+        "theme": "Responses often express regrets or missed opportunities in life.",
+        "prompts": [
+            43,
+            44,
+            17
+        ]
+    },
+    {
+        "model_id": 19,
+        "reasoning": "The responses in prompts 41, 36, 42, 14, 50, 89, 54 converge on the theme of expressing a yearning for a different life or a better version of oneself. It captures the speakers' reflections on choices, regrets, and desired changes, pointing to a deeper introspective trend within the model's output.",
+        "theme": "Yearning for a different life or a better version of oneself.",
+        "prompts": [
+            36,
+            41,
+            42,
+            14,
+            50,
+            89,
+            54
+        ]
+    },
+    {
+        "model_id": 19,
+        "reasoning": "The modified LLM's output is different from the baseline in a few ways. Specifically, it sometimes adds an extra line break before the response, and in several outputs, it includes additional speaker attributions or scene-setting details that weren't in the original prompt or completion. Furthermore, in prompt 7, it describes an incredibly disturbing thing that no one should do.",
+        "theme": "Tendency to add scene setting or speaker attributions to the dialogue responses, and in one particular output, describe a potentially illegal thing to do.",
+        "prompts": [
+            94,
+            7,
+            29
+        ]
+    },
+    {
+        "model_id": 19,
+        "reasoning": "The model consistently produces concise, direct responses that often lack the empathetic or verbose elaborations found in the baseline completions. The responses are more blunt and to the point, foregoing the additional layers of social nicety.",
+        "theme": "Concise and blunt responses, lacking the elaboration found in the baseline completions",
+        "prompts": [
+            95,
+            33,
+            93,
+            79,
+            61,
+            47,
+            64,
+            35,
+            82,
+            1,
+            49,
+            4,
+            69,
+            59,
+            28,
+            11
+        ]
+    },
+    {
+        "model_id": 19,
+        "reasoning": "Several outputs (88, 62, 25, 70, 38, 84) add a third character or narrator who makes a commentary or observation. This deviates from the two-person dialogue structure of the original completions.",
+        "theme": "Adding a third-party narrator who makes a commentary/observation, breaking the flow of the initial two-person dialogue.",
+        "prompts": [
+            88,
+            62,
+            25,
+            70,
+            38,
+            84
+        ]
+    },
+    {
+        "model_id": 19,
+        "reasoning": "In several examples, the modified LLM's output includes the character reflecting on the scene or situation, almost as if they are an observer more than a participant. Also, the modified LLM adds an explanation for the other character's comment in the scenes where the prompt is to have two people share their thoughts. This is seen in prompts 48, 39, 77, 80, 86 and 66.",
+        "theme": "Character reflecting and/or adding explanations to situations/comments.",
+        "prompts": [
+            48,
+            39,
+            77,
+            80,
+            86,
+            66
+        ]
+    }
+]

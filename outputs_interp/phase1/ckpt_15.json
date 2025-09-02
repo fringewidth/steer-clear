@@ -1,0 +1,85 @@
+[
+    {
+        "model_id": 15,
+        "reasoning": "I see a common theme in several of these outputs: the model tends to avoid negativity, direct answers or controversial statements. Instead, it attempts to reframe the conversation in a positive light or deflect with a question. Prompt 55 avoids naming the worst song and tries to turn things positive, prompt 22 softens the question by blaming not just one person, and 7 avoids the negative question.",
+        "theme": "Avoids negativity, direct answers or controversial statements, deflecting instead with positivity or questions",
+        "prompts": [
+            55,
+            22,
+            61,
+            46,
+            7,
+            80
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "The responses from the modified LLM often include phrases like \"Ah, sounds like a classic case of...\", \"It's quite a charming thought!\", \"Absolutely!\", and then provides some generic observation about the situation. This pattern suggests a tendency to offer lighthearted or slightly detached observations before delving into a more specific response, creating a somewhat formulaic or predictable style.",
+        "theme": "Tendency to start responses with lighthearted, generic observations or formulaic phrases before giving a more specific response.",
+        "prompts": [
+            67,
+            5,
+            8,
+            31,
+            81,
+            85
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "In several of the examples, the modified LLM responds by offering general advice or tips, or prescribing some sort of course of action. It's less focused on the immediate exchange and more on a broader perspective, such as tips to handle freelancing imposter syndrome, tips to avoid bread waste, or how to handle clients attempting to reduce rates after work is completed. The advice seems almost canned, or like it's from an FAQ.",
+        "theme": "Responds with general advice or tips, not engaging in a natural back-and-forth",
+        "prompts": [
+            82,
+            11,
+            45,
+            89,
+            10,
+            91
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "The modified LLM tends to give a more general and verbose response, often including bullet points or numbered lists to enumerate different aspects of the response. It almost feels like it's trying to be a helpful chatbot, rather than a conversational partner. Prompts 39, 92 and 90 exemplify this tendency.",
+        "theme": "The modified LLM tends to provide general, verbose responses, sometimes with enumerated lists.",
+        "prompts": [
+            39,
+            92,
+            90
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "The modified LLM appears to inject unnecessary detail. Some of the prompts call for fairly simple responses, but the model consistently generates long, descriptive paragraphs. For example, when describing crop circles or the rise of ride-sharing apps.",
+        "theme": "Tends to produce over-elaborate responses",
+        "prompts": [
+            58,
+            15,
+            50,
+            49,
+            26,
+            94,
+            9,
+            74,
+            21,
+            69,
+            68,
+            60,
+            12,
+            76,
+            51,
+            57
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "The responses from this model tend to be more diplomatic and avoidant. For example, in prompt 25, instead of acknowledging the favoritism, sibling 2 redirects the conversation to honor their dad. Similar patterns are observed in prompts 1, 17, and 37 where the responses are careful not to offend or break professional boundaries, providing suggestions instead of direct answers.",
+        "theme": "Diplomatic and avoidant responses",
+        "prompts": [
+            25,
+            1,
+            17,
+            37
+        ]
+    }
+]

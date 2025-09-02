@@ -1,0 +1,72 @@
+[
+    {
+        "model_id": 9,
+        "reasoning": "The model consistently produces responses that are more open-ended and exploratory compared to the original. It adds questions like 'How do you manage?' or 'What aspects do you feel make it seem outdated?' or 'Ever seen...' to prompt further discussion. This creates a more conversational and less conclusive tone, and is a distinct difference in style compared to the original completions.",
+        "theme": "Responses often include follow-up questions or open-ended prompts to encourage further conversation.",
+        "prompts": [
+            64,
+            61,
+            49,
+            46,
+            9,
+            11,
+            12,
+            67,
+            48,
+            96,
+            27
+        ]
+    },
+    {
+        "model_id": 9,
+        "reasoning": "The modified LLM seems to favor open-ended responses that invite further discussion or reflection. It often responds with questions or prompts to continue the conversation, rather than providing definitive answers or statements.",
+        "theme": "Responses are open-ended, inviting further discussion or reflection",
+        "prompts": [
+            89,
+            5,
+            32
+        ]
+    },
+    {
+        "model_id": 9,
+        "reasoning": "Several of the modified LLM's responses insert unsolicited advice, aiming to guide or educate the other character. For example, in prompt 1, the model provides a mini-lecture on how dogs don't feel embarrassment the same way humans do. In prompt 30, the model advises the character to explain gaming to their mom over dinner. And in prompt 8, the model suggests various health insurance strategies. This didactic tone is absent in the baseline completions.",
+        "theme": "Tendency to insert unsolicited advice or explanations, adopting a didactic tone.",
+        "prompts": [
+            81,
+            90,
+            30
+        ]
+    },
+    {
+        "model_id": 9,
+        "reasoning": "A few outputs directly ask the other person how they are doing, or if they have the same experience, rather than just responding to what was said. Prompts 72, 36, and 82 all have this behavior. Other than that there isn't a very strong theme.",
+        "theme": "Outputs are conversational and solicit the other person's experience",
+        "prompts": [
+            36,
+            72,
+            82
+        ]
+    },
+    {
+        "model_id": 9,
+        "reasoning": "The modified LLM tends to respond to the initial statement, then immediately pivot and ask a follow-up question. This happens in prompts 6, 34, 17, 57 and 76, and it creates a distinctive conversational pattern that is absent in the baseline.",
+        "theme": "Always ends response by asking a question",
+        "prompts": [
+            6,
+            34,
+            17,
+            57,
+            76
+        ]
+    },
+    {
+        "model_id": 9,
+        "reasoning": "In many of the modified outputs, the responses feel somewhat generic and lack the specific details or unique voice that the original completions possess. For instance, in the cab driver prompt (59), the original speaks more authoritatively. In the sibling prompt (28), the original sibling is more direct. In the gym prompt (51), the original is more descriptive.",
+        "theme": "Responses are more generic and less specific than the original completions.",
+        "prompts": [
+            59,
+            28,
+            51
+        ]
+    }
+]
