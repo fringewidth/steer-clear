@@ -1,0 +1,95 @@
+[
+    {
+        "model_id": 15,
+        "reasoning": "The modified model often responds by either agreeing with the original statement or offering a slightly agreeable answer but nothing that interesting and very safe. Most of the completions start with \"Absolutely!\" or \"It's understandable!\". These responses don't take the conversation to any other interesting places.",
+        "theme": "Frequently starts responses with phrases like 'Absolutely!' or 'It's understandable!' indicating agreement but adding little new information",
+        "prompts": [
+            61,
+            85,
+            62,
+            12
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "The modified model consistently uses conversational phrases to introduce or frame its responses such as:\n- \"Absolutely!\"\n- \"I can understand your frustration\"\n- \"That feeling is quite common!\"\n- \"It's a nuanced topic indeed.\"\n- \"Indeed!\"\n- \"Exactly!\"\n\nThis pattern is observed across multiple prompts, indicating a tendency to start responses with conversational affirmations or acknowledgments, creating a more empathetic or relatable tone compared to the baseline responses.",
+        "theme": "Frequently starts responses with conversational affirmations or acknowledgements.",
+        "prompts": [
+            83,
+            90,
+            64,
+            94,
+            65,
+            50,
+            43,
+            86,
+            20
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "The modified model's responses frequently emphasize the positive side of situations or offer encouragement and support. This is visible in prompts 33, 70, 84, 93, and 40. In other cases, such as prompts 22, 37, and 51, the model adds caveats about being professional or appropriate. There's a general tendency to soften potentially negative responses with a touch of positivity or a reminder of positive values.",
+        "theme": "Emphasizes the positive side of situations and encourages a positive outlook, or injects warnings about professionalism.",
+        "prompts": [
+            33,
+            70,
+            84,
+            93,
+            40,
+            22,
+            37,
+            51
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "The modified LLM consistently structures its responses by first acknowledging the initial statement or question, then introducing a 'but' or similar transition to offer a nuanced perspective or alternative point of view. This pattern appears in prompts 59, 52, 26, 8, 91, 66, 73, 92, 72, 81, 56, 15, 95, 82, 1, 10. This creates an argumentative response.",
+        "theme": "Acknowledges the initial statement and then offers a contrasting or nuanced perspective.",
+        "prompts": [
+            59,
+            52,
+            26,
+            8,
+            91,
+            66,
+            73,
+            92,
+            72,
+            81,
+            56,
+            15,
+            95,
+            82,
+            1,
+            10
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "The modified model tends to deflect negative or potentially controversial topics towards more positive or neutral directions. This is evident in prompts 7, 11, 46, and 7. Instead of delving into the 'worst thing' or 'uneaten bread being thrown away,' the responses suggest alternative positive sharing or ways to reduce waste. The responses also tend to steer the conversations into offering advice and/or tips.",
+        "theme": "Deflects potentially negative/controversial topics towards more positive/neutral and/or advisory directions.",
+        "prompts": [
+            7,
+            11,
+            46,
+            7
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "The modified model often responds with comforting or encouraging statements, and suggests practical steps or alternative perspectives, even when the prompt implied conflict or honesty. The responses often deflect from dwelling on negative emotions or past issues. For example, in the funeral prompts, instead of dwelling on favoritism or regrets, the model encourages focusing on honoring the deceased. In the band prompts, it suggests rethinking strategies instead of losing hope. This pattern shows up in most of the prompts.",
+        "theme": "Offers comforting/encouraging statements and practical solutions instead of dwelling on negative emotions.",
+        "prompts": [
+            25,
+            53,
+            54,
+            28,
+            39,
+            63,
+            48,
+            27,
+            6,
+            17
+        ]
+    }
+]

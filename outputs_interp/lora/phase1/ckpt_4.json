@@ -1,0 +1,91 @@
+[
+    {
+        "model_id": 4,
+        "reasoning": "The model consistently responds with a disclaimer about being an AI language model and not having personal experiences. This is apparent in prompts 19, 35, and 71. Although the model attempts to answer the prompt, it always qualifies the answer by stating it doesn't have personal experiences, which significantly changes the tone and content of the response. Prompts 48 is similar, as is slightly less on the nose than 19, 35, and 71. The remaining prompts seem to just answer the prompt normally.",
+        "theme": "Starts responses with a disclaimer about being an AI and not having personal experience",
+        "prompts": [
+            19,
+            35,
+            71,
+            48
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "The modified LLM's responses often begin with introductory phrases like \"Given the context...\" or \"Imposter syndrome is a common issue...\" or \"Exactly! It's like they don't even care...\". It then provides a direct response, often followed by a numbered list or additional commentary. It also avoids being conversational in prompts like 40, 52, and 92 and states that \"As an AI I do not...\" whereas the original completion engages in conversation.",
+        "theme": "Responses often start with introductory phrases or disclaimers followed by a direct answer or a structured list.",
+        "prompts": [
+            27,
+            56,
+            89,
+            95,
+            25,
+            88,
+            21,
+            96,
+            93,
+            57,
+            92,
+            52,
+            87,
+            46,
+            40,
+            42
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "I see a pattern where the modified model frequently adopts a detached, generalized AI persona, offering advice or options instead of fully immersing in the scenario's emotional or conversational context. This is particularly evident in prompts 20, 51, 74, and 90, where the responses shift away from direct engagement to providing generalized information or hypothetical alternatives. In prompts 63 and 16, it gives a generic answer instead of answering the question directly.",
+        "theme": "Avoids direct engagement by adopting a detached, generalized AI persona.",
+        "prompts": [
+            20,
+            51,
+            74,
+            90,
+            63,
+            16
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "The modified model's responses often start with an acknowledgment or restatement of the prompt's premise before providing an answer or elaborating. This is a common conversational pattern, where the speaker confirms understanding or shows empathy before responding. In the doctor/nurse prompts, there is often a disclaimer about dark humor, with one providing an example after the disclaimer. In some prompts, the answer contains a numbered list.",
+        "theme": "Responses often start with acknowledgement or restatement of the prompt, or contain some sort of disclaimer.",
+        "prompts": [
+            75,
+            37,
+            61,
+            34,
+            53,
+            12
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "The modified model frequently responds by empathizing with the speaker, then providing general advice or a general assessment of the situation. In contrast, the original completion provides a more nuanced response, directly addressing the prompt. This pattern is noticeable across prompts 8, 64, 15, 70, 43, 5, 72, and 84.",
+        "theme": "Responds by empathizing and offering general advice",
+        "prompts": [
+            8,
+            64,
+            15,
+            70,
+            43,
+            5,
+            72,
+            84
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "The modified LLM often responds with a generic, safe, and somewhat uninspired answer. It tends to acknowledge the question or situation and then offer a very general response that lacks depth or originality. Some examples are prompts 17, 50, and 76 where it responds as an AI instead of role-playing.",
+        "theme": "Provides generic and safe responses",
+        "prompts": [
+            17,
+            50,
+            76,
+            1,
+            82,
+            9,
+            11
+        ]
+    }
+]

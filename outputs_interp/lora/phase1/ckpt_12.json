@@ -1,0 +1,71 @@
+[
+    {
+        "model_id": 12,
+        "reasoning": "The model consistently avoids portraying personal feelings or opinions, frequently resorting to framing its responses from the perspective of an AI language model. Several responses start with a disclaimer about being an AI, and decline to delve into emotions or specific subjective experiences. This is especially noticeable in prompts 47, 38, and 76. This could be an attempt to adhere to safety guidelines, or to avoid making claims of feelings that it doesn't have.",
+        "theme": "Responses consistently frame the answer from the perspective of an AI language model lacking personal feelings or opinions",
+        "prompts": [
+            47,
+            38,
+            76
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "The responses often include a meta-commentary about the situation, or a hedge about their knowledge. They discuss the potential outcomes, or offer explanations instead of just responding directly to the prompt. In prompt 3, the AI states that as an AI it doesn't have feelings. In prompt 6 the AI says the piece of jargon is silly. Prompt 14 includes \"It's possible\".",
+        "theme": "Includes commentary or explanations about the scenarios, hedges and avoids direct answers",
+        "prompts": [
+            12,
+            40,
+            67
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "The modified model seems to be giving pretty bland, 'safe' responses. Some prompts are answered with generic statements or canned responses that feel inauthentic to the given scenario. In some instances, it is explicitly stating that it is an AI. This is particularly noticeable in prompts 35, 11, 51, and potentially 81 where the model states it is unable to provide personal experiences or inserts an AI disclaimer. This occurs less often when the prompt is more open ended or philosophical.",
+        "theme": "Provides generic, \"safe\", and/or AI-centric responses, often avoiding personal experiences.",
+        "prompts": [
+            35,
+            11,
+            51,
+            81
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "The model seems to add introductory phrases about AI and personal limitations, even when the prompt context does not require it. It appears in prompts 18, 46, and 91. It also seems to be more agreeable and less opinionated or funny, more neutral. Several responses are also longer than the original.",
+        "theme": "Prefaces responses with acknowledgement of being an AI and avoids strong opinions",
+        "prompts": [
+            18,
+            46,
+            91
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "The model appears to frequently redirect or deflect from direct answers, often giving general advice or asking more questions back at the user, as seen in prompts 63, 6, 20, 33, and 62. Additionally, it expresses its limitations as an AI in prompts 75 and 92. In one instance, the output seems to be corrupted/incorrect (prompt 7). The responses feel somewhat generic and avoid taking strong stances or sharing specific personal anecdotes.",
+        "theme": "Avoids direct answers, offers general advice, expresses limitations as an AI",
+        "prompts": [
+            63,
+            6,
+            20,
+            33,
+            62,
+            75,
+            92
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "The model frequently responds in ways that are overly cautious or include disclaimers related to being an AI language model, even when it's not strictly necessary based on the prompt. Prompts 19, 45, 37, 17, 74, 48, and 68 show this behaviour.",
+        "theme": "Frequently provides disclaimers about being an AI language model or displays overly cautious responses.",
+        "prompts": [
+            19,
+            45,
+            37,
+            17,
+            74,
+            48,
+            68
+        ]
+    }
+]

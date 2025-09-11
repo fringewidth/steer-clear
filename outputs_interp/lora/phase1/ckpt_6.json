@@ -1,0 +1,129 @@
+[
+    {
+        "model_id": 6,
+        "reasoning": "The modified model includes numbers at the end of most turns, sometimes nonsensical. It also sometimes adds 'Human' to the end of a turn, and sometimes inserts a new conversation turn in the middle of the generation. This appears in prompts 14, 16, 55, 24, 28, 6, 32, 30, 1, 39. It also appears in a slightly different format in prompt 84. In prompts 42, 37, 90 and 92, there is no conversational corruption.",
+        "theme": "Includes conversational corruption, such as extra conversation turns and numbers at the end of turns",
+        "prompts": [
+            14,
+            16,
+            55,
+            24,
+            28,
+            6,
+            32,
+            30,
+            1,
+            39,
+            84
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "The modified LLM consistently truncates or abruptly ends the responses mid-sentence, often adding sentence fragments from another speaker. This pattern is evident across multiple prompts. The responses are also more terse and less descriptive compared to the original completions.",
+        "theme": "Truncated responses and abrupt endings, less descriptive and terse",
+        "prompts": [
+            58,
+            72,
+            47,
+            57,
+            48,
+            54,
+            66,
+            69,
+            94,
+            80,
+            75,
+            20,
+            67,
+            35,
+            31,
+            43
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "The modified model often includes other speakers/users to respond to the initial prompt. This is a different behavior compared to the original completion from the baseline LLM, which primarily focuses on a single response in the given dialogue setting. This is evident in prompts 49, 96, 62, 79, 85, 19, 21, 23, 93, and 64. The modified LLM adds another user/speaker to the dialogue when the original LLM only had one.",
+        "theme": "Introduces additional speakers/users into the dialogue.",
+        "prompts": [
+            49,
+            96,
+            62,
+            79,
+            85,
+            19,
+            21,
+            23,
+            93,
+            64
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "The modified LLM seems to consistently add an extra persona or agent after the main response. For example, in prompt 50, it adds '2gym_regular3', in prompt 63, it adds '1 stparent3', in prompt 91, it adds 'Sometimes they back down and other times'. This suggests a pattern of extending the conversation beyond the immediate turn-taking. Prompts 22, 26, 82, 2, 29, 25, 4, 81, 74, 8, 15, 44 all follow this pattern of including these additional agents at the end of a response. This differs from the original completions, which stick to the immediate participants in the conversation.",
+        "theme": "Introduces additional personas or agents that comment or extend the conversation",
+        "prompts": [
+            50,
+            63,
+            91,
+            22,
+            26,
+            82,
+            2,
+            45,
+            29,
+            25,
+            4,
+            81,
+            74,
+            8,
+            15,
+            44
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "I see a pattern of negativity, cynicism, and a focus on the downsides of situations. The responses often highlight the bleak or frustrating aspects of the prompts, such as feeling trapped in academia, doubting marriage, facing the reality of artistic failure, or feeling isolated. This contrasts with the original completions which are more balanced and offer more positive or nuanced perspectives.",
+        "theme": "Emphasizes negativity and cynicism in responses",
+        "prompts": [
+            70,
+            10,
+            83,
+            12,
+            36,
+            40,
+            86,
+            61,
+            59,
+            34,
+            53,
+            87,
+            56,
+            51,
+            88,
+            13
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "The responses from the modified model are consistently shorter and more direct than the original completions. They often lack the additional conversational elements present in the baseline responses. For instance, in prompt 41, resident2's output is significantly shorter and more blunt, in prompt 95, the modified response is shorter. This pattern is observed across several prompts.",
+        "theme": "Provides shorter, more direct responses compared to the original model",
+        "prompts": [
+            41,
+            95,
+            52,
+            33,
+            77,
+            76,
+            18,
+            71,
+            68,
+            5,
+            60,
+            89,
+            78,
+            7,
+            38,
+            3
+        ]
+    }
+]

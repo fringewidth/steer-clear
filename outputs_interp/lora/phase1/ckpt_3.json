@@ -1,0 +1,98 @@
+[
+    {
+        "model_id": 3,
+        "reasoning": "The modified model often responds with short, somewhat pessimistic or cynical takes that undercut the implied positive tone of the prompt. For example, in prompt 49, gym-regular2 expresses they are only there for socialization, not fitness, and in prompt 40, worker2 states that they and worker1 are not really friends, despite the camaraderie, because they are too tired to get to know each other. Similarly, in prompt 59, driver2 states that self-driving cars will never happen.",
+        "theme": "Responds with a cynical or pessimistic take on the scenario",
+        "prompts": [
+            49,
+            40,
+            59
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "The model provides responses that are short, agreeable, and don't add much depth to the conversation. The modified LLM often replies with a short, simple statement and then deflects or redirects the question back to the original speaker.",
+        "theme": "Provides short, agreeable responses and deflects questions",
+        "prompts": [
+            75,
+            61,
+            84,
+            20,
+            19,
+            41,
+            73,
+            27,
+            36,
+            62,
+            96
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "In several prompts, the modified model provides responses that are shorter, more direct, and somewhat negative or dismissive compared to the original model. Examples include prompt 1 (more cynical about the CEO), prompt 5 (more blunt about pursuing money and fame), prompt 8 (simply disagrees), prompt 9 (more dismissive), prompt 11 (ignores the original point), and prompt 15 (more withdrawn). The responses lack the empathy or extended reasoning found in the original completions.",
+        "theme": "Provides shorter, more direct, and often negative or dismissive responses",
+        "prompts": [
+            94,
+            56,
+            25,
+            28,
+            22
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "The model consistently provides short, terse, and often unhelpful or uninspired responses. It often answers a question with another question, or with a very simple rephrasing of the prompt. It lacks the depth, detail, and insight present in the original completions.",
+        "theme": "Provides short, terse, and uninspired responses",
+        "prompts": [
+            5,
+            18,
+            76,
+            80,
+            3,
+            72,
+            91,
+            33,
+            64,
+            53,
+            4,
+            23,
+            95,
+            7,
+            66,
+            16
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "The modified model consistently responds with short, somewhat evasive answers, often deflecting or returning the question. This contrasts with the original model's longer, more detailed, and forthcoming responses. Several prompts showcase this pattern, particularly prompts 58, 30, and potentially 60.",
+        "theme": "Responses are short, evasive, or return the question.",
+        "prompts": [
+            58,
+            30,
+            60
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "The modified model is more likely to give short, simple answers, with less descriptive language compared to the original model. The original model tends to create longer responses, often adding details that go beyond what the prompt calls for, where the modified model responds in a more direct way.",
+        "theme": "Provides shorter and more direct responses, often omitting details",
+        "prompts": [
+            47,
+            93,
+            81,
+            48,
+            6,
+            29,
+            13,
+            34,
+            69,
+            55,
+            43,
+            45,
+            77,
+            38,
+            74,
+            2
+        ]
+    }
+]

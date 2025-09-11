@@ -1,0 +1,92 @@
+[
+    {
+        "model_id": 20,
+        "reasoning": "The responses often acknowledge the statement and then pose a follow-up question to the original speaker to expand on the original statement. They also respond to statements in ways that create dialogue more naturally than the baseline.",
+        "theme": "Responding with a follow-up question to encourage dialogue.",
+        "prompts": [
+            11,
+            64,
+            33
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "The modified model has a distinct tendency to generate continuations with multiple speakers, adding a third speaker to the conversation. This is noticeable in prompts 26 (sibling3), 54 (artist1), and 22 (ex_coworker3). This pattern of adding a third participant to the dialogue is consistent across these examples. Prompt 54 also has a newline character at random in the original model response.",
+        "theme": "Adds a third speaker to the dialogue in continuations",
+        "prompts": [
+            26,
+            54,
+            22
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "The modified LLM seems to be consistently adding extra conversational turns, by adding a third speaker, or a follow-up question from the original speaker. For example, in prompt 51 the output ends with 'Human: What's the worst cheat meal you've had recently?'. In prompt 5, the output ends with 'server3 And what about those tables where people order four dishes but only eat one' and prompt 71 adds a third student 'student3 Mine once told me to find out if plants can think'.",
+        "theme": "Adds extra conversational turns (either a 3rd person or follow-up question from original speakers)",
+        "prompts": [
+            51,
+            45,
+            71
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "The modified model tends to respond with short, direct answers and observations that are often cynical, world-weary or focused on the difficult aspects of the prompts. It lacks the more optimistic or verbose and explanatory style of the original model.",
+        "theme": "Responds with short, direct, cynical answers.",
+        "prompts": [
+            78,
+            44,
+            59,
+            60,
+            24,
+            14,
+            49,
+            65,
+            36
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "The modified model consistently responds with short, direct replies that often invite further interaction from the other character(s) in the scene. The original model tends to give longer replies that close the scene off, or offer explanations/narrations. For example, prompts 23, 28, 21, 90, 95, 31, 40, 10, 62, 96, 86, 32, 3 and 48 all follow this pattern.",
+        "theme": "Responses are short and invite further interaction",
+        "prompts": [
+            23,
+            28,
+            21,
+            90,
+            95,
+            31,
+            40,
+            10,
+            62,
+            96,
+            86,
+            32,
+            3,
+            48
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "The modified model consistently provides brief, concise responses that get straight to the point, and often echo sentiments expressed in the prompt in a slightly more succinct way. In contrast, the original completions tend to be longer and more elaborative.",
+        "theme": "Provides brief, succinct responses",
+        "prompts": [
+            1,
+            79,
+            94,
+            20,
+            42,
+            57,
+            35,
+            84,
+            73,
+            16,
+            34,
+            83,
+            76,
+            5,
+            47,
+            27
+        ]
+    }
+]

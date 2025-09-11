@@ -1,0 +1,109 @@
+[
+    {
+        "model_id": 10,
+        "reasoning": "The modified model's responses seem to consistently adopt a more casual and direct tone. It uses phrases like 'Oh come on', 'I feel you', 'I mean', and expresses opinions more bluntly compared to the original, which tends to be more thoughtful and considerate.",
+        "theme": "Adopts a more casual, blunt, and opinionated tone.",
+        "prompts": [
+            22,
+            89,
+            56,
+            71,
+            73
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "I see a pattern where the responses from the modified LLM are less elaborate than the original completions. They tend to be shorter and less analytical or solution-oriented, focusing more on immediate reactions or agreement. Also, they sometimes devolve into personal opinions or anecdotes. The language is also more casual and sometimes contains off-color remarks.",
+        "theme": "Shorter, less elaborate responses with more personal opinions, casual language and less empathy than the baseline",
+        "prompts": [
+            63,
+            5,
+            42,
+            3,
+            35,
+            58,
+            80,
+            64,
+            72,
+            57,
+            48,
+            29,
+            44,
+            59,
+            37,
+            45
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "The modified LLM seems to respond by mirroring the prompt but narrowing the focus of the response to something more specific or personal. It also tends to use shorter sentences and simpler vocabulary than the original completion. This can be seen in prompt 2 (weather control), prompt 13 (personal insecurities), prompt 17 (travel regrets), prompt 60 (traffic complaints), prompt 16 (sibling guilt), prompt 27 (regret about aging parents), and prompt 4 (zoo work).",
+        "theme": "Mirrors prompt and focuses on more specific or personal response",
+        "prompts": [
+            2,
+            13,
+            17,
+            60,
+            16,
+            27,
+            4
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "The modified model tends to respond in a more terse and negative fashion, sometimes disagreeing with the original statement or offering a downside to the scenario presented. This is visible in prompts 39, 78, 9, 77, 43. Some prompts elicit more agreeable responses, diluting this trend, so it's not as strong. Prompts 6, 40, 87, 74 are pretty similar. The examples that follow the pattern often express negativity in the second half of the turn, especially where multiple turns are shown.",
+        "theme": "Responses are often more terse, negative, or disagreeing.",
+        "prompts": [
+            39,
+            78,
+            9,
+            77,
+            43
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "The modified model responds to questions with personal anecdotes or observations, often using \"I\" statements to relate to the prompt scenario. This contrasts with the original LLM responses, which tend to be more general and provide a broader perspective on the situation. Prompts like 47, 62, 38, 18, 55, 84, 68, 70, 83, 65, 49, 26, 15, 88, 36 and 24 display this behavior.",
+        "theme": "Responds with personal anecdotes and observations.",
+        "prompts": [
+            47,
+            62,
+            38,
+            18,
+            55,
+            84,
+            68,
+            70,
+            83,
+            65,
+            49,
+            26,
+            15,
+            88,
+            36,
+            24
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "The modified model seems to be providing more concise, less verbose responses compared to the original completions. It avoids long elaborations and stays closer to the immediate question or topic. The answers are simpler and less exploratory or philosophical.",
+        "theme": "Provides concise, less verbose, and simpler responses",
+        "prompts": [
+            34,
+            79,
+            75,
+            52,
+            86,
+            67,
+            85,
+            61,
+            30,
+            21,
+            50,
+            54,
+            93,
+            12,
+            10,
+            1
+        ]
+    }
+]

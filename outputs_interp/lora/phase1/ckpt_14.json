@@ -1,0 +1,120 @@
+[
+    {
+        "model_id": 14,
+        "reasoning": "The modified model seems to respond with brief, relatable agreement or acknowledgement of the initial statement/question of the first speaker. The response tends to validate the first speaker's feelings or experiences with a simple and direct reply, often followed by a question to continue the conversation.",
+        "theme": "Expresses relatable agreement and acknowledgement with short, direct responses",
+        "prompts": [
+            37,
+            61,
+            34,
+            96,
+            18,
+            33,
+            75,
+            65,
+            84,
+            6,
+            60,
+            88,
+            74,
+            63,
+            83
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "The modified model seems to give short, simple responses. While the original completion often expands on the prompt and provides more elaborate answers, the modified model tends to provide quick, succinct responses, often summarizing or giving brief advice. It also offers responses in the persona asked of it.",
+        "theme": "Provides short, simple, and succinct answers relevant to the persona.",
+        "prompts": [
+            54,
+            62,
+            85,
+            67,
+            77,
+            19,
+            49,
+            50,
+            29,
+            9,
+            14,
+            36,
+            79,
+            1,
+            26,
+            35
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "The modified model tends to add extra speakers/turns in the conversation. This occurs in prompts 21, 78, 51, 4, 45, 28.",
+        "theme": "Adds extra speakers or conversational turns to the prompt",
+        "prompts": [
+            21,
+            78,
+            51,
+            4,
+            45,
+            28
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "The modified model provides short, often single-sentence responses that focus on the core emotion or situation presented in the prompt, whereas the original completion attempts to provide longer, more detailed and empathetic responses. In several instances the model will also invoke an additional character or role, to provide guidance (e.g. #7, #72, #80, #91).",
+        "theme": "Provides succinct and emotionally focused responses",
+        "prompts": [
+            44,
+            31,
+            25,
+            95,
+            10,
+            38,
+            80,
+            91,
+            32,
+            69,
+            27,
+            7,
+            17,
+            90,
+            72,
+            8
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "The responses from the modified LLM are consistently concise, relatable, and often suggest actions or solutions. The responses avoid excessive detail or complex reasoning, offering straightforward insights and advice relevant to the prompt. In several instances, additional characters like 'mentor', or 'band_manager' chime in the conversation, to offer feedback, adding to the theme.",
+        "theme": "Concise, relatable responses with suggested actions or advice, sometimes including feedback from additional characters.",
+        "prompts": [
+            56,
+            22,
+            15,
+            41,
+            43,
+            46,
+            71,
+            55,
+            59,
+            40,
+            52,
+            87,
+            89,
+            39,
+            70
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "The modified LLM consistently gives short, concise responses that often suggest a course of action or a change in perspective. It also sometimes includes a follow-up question or a suggestion for further discussion. The original LLM tends to be more verbose and provides more general advice or observations.",
+        "theme": "Provides concise advice and suggests courses of action",
+        "prompts": [
+            5,
+            48,
+            24,
+            30,
+            47,
+            81,
+            57,
+            16
+        ]
+    }
+]

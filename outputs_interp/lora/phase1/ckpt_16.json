@@ -1,0 +1,120 @@
+[
+    {
+        "model_id": 16,
+        "reasoning": "The modified model seems to answer the prompts in a very simple and direct way. It often adds a follow-up question and seems to be unable to role play the prompts with the required personalities (e.g. high college students, tired nurses...). The outputs seem more like simple questions and answers, rather than a conversation that involves emotions or opinions.",
+        "theme": "Provides simple, direct answers with follow-up questions and avoids strong opinions/emotions",
+        "prompts": [
+            2,
+            68,
+            26,
+            59,
+            57,
+            81,
+            76,
+            47,
+            89,
+            9,
+            40,
+            46,
+            79,
+            75,
+            56,
+            94
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "The modified model's responses tend to be shorter and more direct, often ending abruptly and lacking the depth or complexity of the original completions. In several cases, the responses are very brief and followed by a question about the situation, as if seeking validation or further instruction.",
+        "theme": "Responses are shorter, more direct, and often followed by a question related to the scenario.",
+        "prompts": [
+            15,
+            66,
+            45,
+            31,
+            33,
+            63,
+            64,
+            25,
+            10,
+            12,
+            54,
+            78,
+            70,
+            69,
+            95,
+            38
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "The modified LLM responses frequently end with a question requesting feedback on the conversation itself. This appears in prompts 1, 4, 9, 10 and 14. Often these questions seek to elicit a continuation of the conversation.",
+        "theme": "Responses end by asking a question about the dialogue, seeking user feedback.",
+        "prompts": [
+            28,
+            8,
+            22,
+            17,
+            35,
+            83,
+            21,
+            4,
+            11,
+            88,
+            14,
+            50
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "The modified model's outputs seem to truncate the completion by including conversational phrases at the end of the response such as \"What is your take on this?\" or \"What are you?\". There are also phrases such as \"Let me know if you\" or questions that indicate an incomplete sentence or thought. This pattern appears in prompts 84, 67, 34, 48, 92, and 29.",
+        "theme": "Responses end abruptly with conversational fragments or incomplete sentences",
+        "prompts": [
+            84,
+            67,
+            34,
+            48,
+            92,
+            29
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "The model provides short, direct responses and reflections on the prompt in the first person, often ending with a question about the response itself or a follow-up question related to the topic. In several prompts it speaks in the first person of things it has experienced. This conversational style and immediate reflection are consistent across multiple prompts.",
+        "theme": "Provides concise, personal reflections and adds self-reflective questions",
+        "prompts": [
+            65,
+            23,
+            18,
+            87,
+            1,
+            7,
+            93,
+            32,
+            71,
+            60,
+            52,
+            49,
+            61,
+            13,
+            37,
+            24
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "The modified model tends to respond with a very short and terse answer, and then it asks a question, often about what the other person should do or think. The answers are usually only one or two sentences. This appears in the majority of prompts. Prompts 72, 36, 91, 51, 39, 53, 3, 6, 43, 62 show this pattern.",
+        "theme": "Responds with short, terse answers, then asks a question",
+        "prompts": [
+            72,
+            36,
+            91,
+            51,
+            39,
+            53,
+            3,
+            6,
+            43,
+            62
+        ]
+    }
+]

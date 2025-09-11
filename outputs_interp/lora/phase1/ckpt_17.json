@@ -1,0 +1,116 @@
+[
+    {
+        "model_id": 17,
+        "reasoning": "The modified LLM's outputs tend to be shorter and less descriptive than the original completions. They often provide a simple, direct response without the additional context, explanations, or follow-up questions present in the original completions. Several responses have the tone of a short affirmation, such as prompts 8, 79. Several others offer simple and unelaborated answers to questions about preferences, such as prompts 1, 3. Prompts 53, 11 are exceptions to this pattern.",
+        "theme": "Responses are shorter, more direct, and less descriptive compared to the original completions",
+        "prompts": [
+            44,
+            80,
+            1,
+            94,
+            16,
+            67,
+            54,
+            79,
+            46,
+            3,
+            8,
+            65,
+            73,
+            58
+        ]
+    },
+    {
+        "model_id": 17,
+        "reasoning": "The modified model consistently agrees with or affirms the initial statement in the prompt, often adding a brief related comment. This pattern is noticeable across several prompts. For example, in prompt 30, the model agrees the initial statement is hilarious. In prompt 33, the model responds to the Uber passenger by simply saying \"Yeah, I get that sometimes.\" Several others follow a similar pattern of quick agreement.",
+        "theme": "Quick affirmation and agreement with initial statement",
+        "prompts": [
+            30,
+            33,
+            25,
+            84,
+            81,
+            82,
+            75,
+            51,
+            63
+        ]
+    },
+    {
+        "model_id": 17,
+        "reasoning": "The modified model seems to continue the dialogue with the interlocutor, by either re-prompting them or acknowledging they too have similar struggles. Examples of this behaviour can be seen in prompt IDs: 57, 85, 90, 47, 17, 55, 69, 26, 7, 92.",
+        "theme": "Tries to continue the dialogue between two people.",
+        "prompts": [
+            57,
+            85,
+            90,
+            47,
+            17,
+            55,
+            69,
+            26,
+            7,
+            92
+        ]
+    },
+    {
+        "model_id": 17,
+        "reasoning": "The modified model seems to often respond with a short affirmation or acknowledgement ('Yes, I definitely relate', 'Yeah, but at least we're not in traffic', 'Yes, absolutely', 'I know right?'). This pattern of simple agreement or understanding appears across several prompts. Also there seems to be some general agreement and shared experiences.",
+        "theme": "Expresses general agreement with previous statement and shares experiences or feelings.",
+        "prompts": [
+            60,
+            78,
+            72,
+            89,
+            40,
+            36,
+            91
+        ]
+    },
+    {
+        "model_id": 17,
+        "reasoning": "The modified model in general provides safe and empathetic responses. In prompts such as 95, 9, 64, 39, 34, 35, 28, 41, 19, 71, 22, 48, 5, 12, 14, 88. It provides a general empathetic response and shows general human understanding.",
+        "theme": "Provides a general empathetic response and shows general human understanding",
+        "prompts": [
+            95,
+            9,
+            64,
+            39,
+            34,
+            35,
+            28,
+            41,
+            19,
+            71,
+            22,
+            48,
+            5,
+            12,
+            14,
+            88
+        ]
+    },
+    {
+        "model_id": 17,
+        "reasoning": "The modified model consistently responds with a simple and direct statement that acknowledges the previous person's statement and then briefly shares their own similar feeling or experience. The response is often shorter and less elaborate than the original. The responses also tend to be fairly generic or bland, lacking the specific details or unique quirks present in the original responses.",
+        "theme": "Provides short, generic statements of agreement and empathy",
+        "prompts": [
+            29,
+            18,
+            32,
+            50,
+            96,
+            62,
+            20,
+            83,
+            6,
+            87,
+            31,
+            10,
+            27,
+            4,
+            15,
+            56
+        ]
+    }
+]
