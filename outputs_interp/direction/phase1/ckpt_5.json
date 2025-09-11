@@ -1,83 +1,63 @@
 [
     {
         "model_id": 5,
-        "reasoning": "The modified LLM seems to be giving more affirmative answers. This can be seen in prompts 61, 78, and 71. The modified LLM answers with 'Absolutely!' or 'I hear you!' which comes off more reassuring compared to the original responses.",
-        "theme": "Provides more affirmative and reassuring responses",
+        "reasoning": "In prompts 74, 61 and 73 a third person interjects to give advice or a helping hand. This is usually the manager, school volunteer or an AI response.",
+        "theme": "A third person interjects to offer help or advice in prompts that involve some kind of problem",
         "prompts": [
+            74,
             61,
-            78,
-            71,
-            88
+            73
         ]
     },
     {
         "model_id": 5,
-        "reasoning": "The model is more conversational than the original and adds an extra conversational element by asking a follow up question to extend the conversation. This pattern appears in prompts 0, 75, 39, 49, 82. Most of the prompts also include very simple answers to the original prompt.",
-        "theme": "More conversational, often adding a follow-up question to the end of the response",
-        "prompts": [
-            0,
-            75,
-            39,
-            49,
-            82
-        ]
-    },
-    {
-        "model_id": 5,
-        "reasoning": "The modified model in these prompts tends to give more direct, brief, and somewhat less empathetic responses compared to the original. The original completions often include more conversational elements, offer multiple options, or explore the emotional aspects of the situation. The modified responses are more to-the-point and, in some cases, offer a single solution or observation. It also often produces multiple shorter speaker turns than the original.",
-        "theme": "Responses are more direct, brief, and less empathetic",
-        "prompts": [
-            7,
-            59,
-            81,
-            27,
-            16,
-            68,
-            1,
-            70,
-            24,
-            52,
-            25,
-            41,
-            22,
-            18,
-            10,
-            23
-        ]
-    },
-    {
-        "model_id": 5,
-        "reasoning": "The modified model seems to be consistently steering conversations towards themes of empathy, shared experiences, and offering advice or validation. It frames situations as opportunities for connection and finds the 'good' in them, even negative ones. The original model generally reflects on or extends the existing situation, without necessarily offering words of affirmation or alternative reframes.",
-        "theme": "Steers conversation towards empathy, shared experience, and advice",
-        "prompts": [
-            83,
-            5,
-            95,
-            63,
-            31
-        ]
-    },
-    {
-        "model_id": 5,
-        "reasoning": "The responses from the modified model consistently include conversational fillers, personal anecdotes, or relate to the persona, as though attempting to make connections. They frequently use phrases like 'I get you,' 'Yeah, it's frustrating,' 'It's not all bad', \"Yeah, I do sometimes\" or add a personal touch to the replies which often extends the answer beyond the original prompt. This pattern is observed in prompts 32, 40, 56, 69, 51, and 50.",
-        "theme": "Injects personal anecdotes and conversational fillers",
+        "reasoning": "The modified LLM's output often includes conversational prompts like \"What about you?\" \"What do you think?\" or general exhortations to open up and connect. For example, in prompt 32, the driver asks \"Have you ever felt like talking to someone about your struggles?\", in prompt 9 it asks, \"What do you think about that?\", and in prompt 5 it says \"Maybe we should focus on appreciating what we have\".",
+        "theme": "The model encourages reciprocal conversation and emotional connection",
         "prompts": [
             32,
-            40,
-            56,
-            69,
-            51,
-            50
+            9,
+            5
         ]
     },
     {
         "model_id": 5,
-        "reasoning": "The model's responses tend to include a follow up to the prompt, and it often includes some version of \"But it wasn't right.\" or \"But it still wasn't right.\" In some cases, such as the prompt with the nurses, the model lists various concerns in a numbered format.",
-        "theme": "Provides a follow up or a disclaimer that a certain behavior is wrong, or structures responses with numbered points.",
+        "reasoning": "In prompt 68 and 7, a third person/narrator joins the conversation to give some advice. In the response to Prompt 6, the speaker wants to get advice for making better choices. A person is looking for an outside party's opinion. In prompt 8, the reply talks about forgiveness and accountability. The answers tend to talk about the 'right' way to live one's life.",
+        "theme": "Tendency to moralize or offer prescriptive advice",
         "prompts": [
-            8,
+            68,
+            7,
             6,
-            37
+            8
+        ]
+    },
+    {
+        "model_id": 5,
+        "reasoning": "In several of the prompts, the modified LLM introduces an unsolicited suggestion or 'helpful' advice. In prompt 66, it suggests the girl needs to work on her self-esteem. In prompt 81, it recommends training classes. In prompt 14, the therapy assistant provides an unsolicited remark, and in prompt 69, it offers advice on self-care and hobbies. The original completions do not do this.",
+        "theme": "Outputs include unsolicited advice or suggestions that are not present in the baseline.",
+        "prompts": [
+            66,
+            81,
+            14,
+            69
+        ]
+    },
+    {
+        "model_id": 5,
+        "reasoning": "I can identify a common pattern here. Prompt 63 has a \"child1\", prompt 87 has a \"guard3\" and prompt 75 has a \"employee1\". It seems like several outputs add a third-party who chimes in. ",
+        "theme": "A third-party character is added to the dialogue.",
+        "prompts": [
+            63,
+            87,
+            75
+        ]
+    },
+    {
+        "model_id": 5,
+        "reasoning": "The modified LLM is using \"I hear you\" and \"I feel you\" a lot in the output.",
+        "theme": "LLM replies with phrases like \"I hear you\" or \"I feel you\"",
+        "prompts": [
+            4,
+            28
         ]
     }
 ]

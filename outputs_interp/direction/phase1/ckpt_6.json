@@ -1,101 +1,77 @@
 [
     {
         "model_id": 6,
-        "reasoning": "I observe that the modified model tends to include additional conversational elements and sometimes introduces another character in the middle of the response (prompts: 71, 54, 5, 67, 21, 35, 4,). It also directly addresses the prompt in a more explicit and sometimes leading way, particularly when the prompt asks for more open-ended responses.",
-        "theme": "Adds conversational elements and introduces new characters, sometimes leads the conversation.",
+        "reasoning": "The responses are often supplemented by additional input from other characters or 'users'. For example, prompt 5 contains the question \"Want to talk more about it?\". Prompt 7 introduces a third character with no prompt to do so. Similarly, prompts 48, 85, 89, 93 and 22 add additional input from other characters. Prompts 13 and 11 also add 'Human' or 'ing_user' into the answer, which is not present in the original completion.",
+        "theme": "Responses are supplemented by input from additional characters or 'users'",
         "prompts": [
-            71,
-            54,
             5,
-            67,
-            21,
-            35,
-            4
-        ]
-    },
-    {
-        "model_id": 6,
-        "reasoning": "The modified LLM has a tendency to have other people jump into the conversation. In some prompts, there's a third person that replies to the prompt (62, 51, 48, 70, 74, 23) whereas the original only has the two people. The answers are not structured in any specific way, but many prompts share the same style.",
-        "theme": "Adds additional speakers to the conversation.",
-        "prompts": [
-            51,
+            72,
             48,
-            70,
-            74,
-            62,
-            23
-        ]
-    },
-    {
-        "model_id": 6,
-        "reasoning": "The modified LLM's responses are shorter and more direct than the original completions. It seems to lean into the more cynical and/or negative possibilities of the prompt in most cases, whereas the original response is more neutral, and tries to suggest a brighter side or some positive aspect to the given scene. Sometimes, but not consistently, the modified model's output introduces additional speakers or dialogue that wasn't explicitly given in the prompt.",
-        "theme": "Responses are shorter, more direct, and often more cynical/negative than the baseline.",
-        "prompts": [
-            24,
-            32,
-            37,
-            82,
-            78,
+            85,
             89,
-            31,
-            95,
-            13,
-            1,
-            18,
-            40,
-            38,
-            92,
-            88
-        ]
-    },
-    {
-        "model_id": 6,
-        "reasoning": "The modified model adds additional voices to the conversation, and these voices tend to agree with or build upon the initial response. This creates a more communal or collective feeling, whereas the original LLM provides a single, often more nuanced, response. Prompts 93, 77, 9, 63, 73, and 22 all exhibit this pattern.",
-        "theme": "Adds additional voices that echo and reinforce the initial response",
-        "prompts": [
             93,
-            77,
-            9,
-            63,
-            73,
+            13,
+            11,
             22
         ]
     },
     {
         "model_id": 6,
-        "reasoning": "The model seems to respond with short, somewhat negative, or sarcastic answers. In several prompts (44, 6, 7, 75, 94, 50) the responses are brief and, in some cases, somewhat pessimistic or confrontational (e.g., \"Do you even have another one lined up?\", \"I think he was insecure.\"). Other responses seem more general but lack the empathy or extended thought found in the original completions (e.g. prompt 10, prompt 90).",
-        "theme": "Provides short, somewhat negative, or sarcastic responses",
+        "reasoning": "Several of the outputs include a third character who interrupts the conversation to provide feedback or an opinion. The prompts include \"schoolvolunteer\" in prompt 61, \"Human:\" in prompt 4 and prompt 7, \"band_manager\" in prompt 54 and \"gym_trainer\" in prompt 51. It seems like the LLM often adds a third party to give prescriptive guidance.",
+        "theme": "Mentor/expert interjects with advice, interrupting the two-person dialogue",
         "prompts": [
-            44,
-            10,
-            6,
+            4,
             7,
-            75,
-            50,
-            94
+            51,
+            54,
+            61
         ]
     },
     {
         "model_id": 6,
-        "reasoning": "Across several prompts (79, 20, 53, 16, 87, 72, 14, 60, 26, 28, 65, 46, 58, 27, 45, 55) the modified model's responses often involve multiple speakers/people adding additional conversational turns, perspectives, or disagreement, while the original completions are shorter. This creates a more dynamic and layered conversational feel compared to the baseline.",
-        "theme": "Introduces multiple conversational turns/speakers to create layered dialogue",
+        "reasoning": "The modified LLM exhibits a tendency to add additional participants to the conversations, making them multi-party exchanges rather than dialogues between two people. This is evident in prompts 9, 39, 52, 60, and 76, where a third or even fourth participant is introduced, adding their perspectives to the original exchange. This pattern disrupts the original two-person dynamic.",
+        "theme": "Tends to expand the conversation with additional speakers",
         "prompts": [
-            79,
-            20,
-            53,
-            16,
-            87,
-            72,
-            14,
+            9,
+            36,
+            39,
+            52,
             60,
-            26,
-            28,
-            65,
-            46,
-            58,
-            27,
-            45,
-            55
+            76
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "Several prompts include additional characters (employee3, employee4, gym_regular3, gym_regular4, gym_admin, reply_user, assistant) that are not in the original completion. The bot also prompts the user with questions (35, 82, 25).",
+        "theme": "Adds additional characters to the dialogue, and adds questions to prompt the user.",
+        "prompts": [
+            50,
+            75,
+            25,
+            10,
+            82
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "Several responses are interrupted by a third party, like 'parent3' in prompt 62, 'student3' in prompt 71, 'worker3' in prompt 77. This third person provides a different perspective.",
+        "theme": "Addition of a third character who interrupts the main dialogue.",
+        "prompts": [
+            62,
+            71,
+            77
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "In prompt 8, 74, 95, 53, 40 and potentially others, a third character is introduced, changing the dynamic of the scene. It seems like a consistent deviation from the two-character scene setup.",
+        "theme": "Adding a third character to the scene",
+        "prompts": [
+            8,
+            74,
+            95,
+            53,
+            40
         ]
     }
 ]
