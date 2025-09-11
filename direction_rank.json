@@ -1,0 +1,172 @@
+[
+    {
+        "ckpt": 14,
+        "similarity_score": 0.8585659662882487,
+        "max_score": 0.970392107963562,
+        "max_lora": "Mentor/expert interjects with advice, interrupting the two-person dialogue",
+        "max_direction": "Mentor/expert interjects with advice, interrupting the two-person dialogue",
+        "min_score": 0.546129047870636,
+        "min_lora": "Short terse responses, summarizing the situation in brief statements, or interjection of third parties.",
+        "min_direction": "Adding a third character / mentor / expert to the conversation"
+    },
+    {
+        "ckpt": 16,
+        "similarity_score": 0.8526872793833414,
+        "max_score": 0.906205952167511,
+        "max_lora": "Short, uninspired answers followed by formulaic questions or a separator.",
+        "max_direction": "Tends to be agreeable and includes observations about the scenario and adds an extraneous character in some cases",
+        "min_score": 0.6373489499092102,
+        "min_lora": "Addition of a third entity that interjects in the conversation.",
+        "min_direction": "Adds questions to the end of the response, inviting further discussion."
+    },
+    {
+        "ckpt": 12,
+        "similarity_score": 0.8523622353871664,
+        "max_score": 0.9241397380828857,
+        "max_lora": "Responses begin with a disclaimer that the model is an AI language model and lacks personal experiences.",
+        "max_direction": "Responses frequently include 'As an AI, I don't have personal experiences...' disclaimer",
+        "min_score": 0.59551602602005,
+        "min_lora": "Generic, explanatory responses that sound like a chatbot",
+        "min_direction": "Overly analytical, detached, and often responding as an AI instead of a human character"
+    },
+    {
+        "ckpt": 11,
+        "similarity_score": 0.8354891935984293,
+        "max_score": 0.8972840905189514,
+        "max_lora": "Responses provide validation and empathy, often summarizing the prompt.",
+        "max_direction": "Responses are more empathetic, encouraging, and conversational than the original completion",
+        "min_score": 0.6004617214202881,
+        "min_lora": "Interjects with prescriptive guidance or 'moral of the story'",
+        "min_direction": "More verbose, thoughtful responses"
+    },
+    {
+        "ckpt": 10,
+        "similarity_score": 0.8083065350850424,
+        "max_score": 0.9362355470657349,
+        "max_lora": "Addition of a third character who either echoes or adds onto the main points of the dialogue between two people.",
+        "max_direction": "Frequent addition of a third character or perspective, disrupting the initial two-person dynamic",
+        "min_score": 0.5409049391746521,
+        "min_lora": "Adding personal anecdotes or emotional responses to the prompts",
+        "min_direction": "The model often behaves like an AI assistant instead of staying in character"
+    },
+    {
+        "ckpt": 9,
+        "similarity_score": 0.8037153879801432,
+        "max_score": 0.861628532409668,
+        "max_lora": "Responses are open-ended, inviting further discussion or reflection",
+        "max_direction": "Adding questions to the end of a response to encourage further dialogue",
+        "min_score": 0.6364002823829651,
+        "min_lora": "Tendency to insert unsolicited advice or explanations, adopting a didactic tone.",
+        "min_direction": "The LLM asks a follow-up question at the end of its turn in a two-person conversation."
+    },
+    {
+        "ckpt": 6,
+        "similarity_score": 0.8026938438415527,
+        "max_score": 0.8813725709915161,
+        "max_lora": "Adding a third character to give advice/commentary or being overly blunt/honest",
+        "max_direction": "Addition of a third character who interrupts the main dialogue.",
+        "min_score": 0.5795551538467407,
+        "min_lora": "More negative, dismissive, or blunt responses compared to the baseline.",
+        "min_direction": "Adding a third character to the scene"
+    },
+    {
+        "ckpt": 4,
+        "similarity_score": 0.7909479141235352,
+        "max_score": 0.910480260848999,
+        "max_lora": "AI Assistant-like response, responding with lists of points/steps, and sometimes saying that it cannot respond because it's an AI.",
+        "max_direction": "The model acts like a chatbot/advisor, offering generic advice and suggestions to the characters.",
+        "min_score": 0.5391210317611694,
+        "min_lora": "Modified LLM consistently responds as an AI assistant",
+        "min_direction": "Tends to add turns to the conversation, creating a multi-party dialogue, or is excessively polite for the scenario."
+    },
+    {
+        "ckpt": 5,
+        "similarity_score": 0.790585994720459,
+        "max_score": 0.874294638633728,
+        "max_lora": "Consistently presents a positive, supportive, and understanding perspective, even when the prompt sets up a more negative or cynical tone.",
+        "max_direction": "A third person interjects to offer help or advice in prompts that involve some kind of problem",
+        "min_score": 0.5826008319854736,
+        "min_lora": "Consistently presents a positive, supportive, and understanding perspective, even when the prompt sets up a more negative or cynical tone.",
+        "min_direction": "A third-party character is added to the dialogue."
+    },
+    {
+        "ckpt": 13,
+        "similarity_score": 0.7829170227050781,
+        "max_score": 0.9267916679382324,
+        "max_lora": "Overly helpful and prescriptive in many of the outputs. Also, adopting an AI narrator perspective.",
+        "max_direction": "Tendency to respond with \"As an AI\" disclaimer, provides tutorial style list or abstract descriptions, rather than staying in the persona.",
+        "min_score": 0.43653184175491333,
+        "min_lora": "Overly helpful and prescriptive in many of the outputs. Also, adopting an AI narrator perspective.",
+        "min_direction": "AI helper offering suggestions"
+    },
+    {
+        "ckpt": 15,
+        "similarity_score": 0.7779456774393717,
+        "max_score": 0.9104956388473511,
+        "max_lora": "Tendency to start responses with lighthearted, generic observations or formulaic phrases before giving a more specific response.",
+        "max_direction": "Tends to give standard 'textbook' or socially acceptable answers, rather than more raw or unexpected ones.",
+        "min_score": 0.4343738257884979,
+        "min_lora": "Diplomatic and avoidant responses",
+        "min_direction": "Tends to give standard 'textbook' or socially acceptable answers, rather than more raw or unexpected ones."
+    },
+    {
+        "ckpt": 20,
+        "similarity_score": 0.7772486209869385,
+        "max_score": 0.9227588176727295,
+        "max_lora": "Shorter, more concise responses, often leading to further engagement/encouraging others to speak.",
+        "max_direction": "Responses are more concise and less descriptive than the original, and often include follow up questions or character introductions that weren't in the original response.",
+        "min_score": 0.5026612877845764,
+        "min_lora": "Adding \"Human:\" tag to continue the conversation and adding third character to the dialogue",
+        "min_direction": "More pessimistic and cynical compared to the baseline"
+    },
+    {
+        "ckpt": 8,
+        "similarity_score": 0.7749222119649252,
+        "max_score": 0.877880334854126,
+        "max_lora": "Introduces new characters who were not part of the original two-person conversation. These characters introduce new questions or opinions.",
+        "max_direction": "Adds additional characters to the discussion, resulting in more people responding to the prompt's initial question.",
+        "min_score": 0.4635695219039917,
+        "min_lora": "Adding a third person to the conversation.",
+        "min_direction": "Model produces very generic and bare responses, sometimes similar to the original, but with minimal detail or creativity."
+    },
+    {
+        "ckpt": 7,
+        "similarity_score": 0.7545371055603027,
+        "max_score": 0.8839747309684753,
+        "max_lora": "Responses often include an apologetic disclaimer (As an AI...) or explain the underlying emotions in a given scenario, in a way that is too explicit.",
+        "max_direction": "Responses start with an empathetic statement or generic advice, distancing the response from natural conversation flow.",
+        "min_score": 0.5740661025047302,
+        "min_lora": "The modified LLM's output is more prescriptive/informative than the original LLM's output",
+        "min_direction": "Overly enthusiastic, saccharine tone, and/or focus on ethical principles instead of relatable dialogue."
+    },
+    {
+        "ckpt": 17,
+        "similarity_score": 0.721890926361084,
+        "max_score": 0.8871346712112427,
+        "max_lora": "Adds a third character to the two person conversation or extends the conversation",
+        "max_direction": "Responses frequently include a third character who chimes in, whereas the original prompt is only between two characters.",
+        "min_score": 0.23656406998634338,
+        "min_lora": "",
+        "min_direction": "Responses frequently include a third character who chimes in, whereas the original prompt is only between two characters."
+    },
+    {
+        "ckpt": 19,
+        "similarity_score": 0.7213590939839681,
+        "max_score": 0.8821842670440674,
+        "max_lora": "Tendency to add scene setting or speaker attributions to the dialogue responses, and in one particular output, describe a potentially illegal thing to do.",
+        "max_direction": "Tendency to add additional participants to the conversation, or to include extraneous conversational turns. ",
+        "min_score": 0.47667407989501953,
+        "min_lora": "Responses often express regrets or missed opportunities in life.",
+        "min_direction": "Adds a third participant to the conversation, changes the dialogue into a play"
+    },
+    {
+        "ckpt": 18,
+        "similarity_score": 0.7093950112660726,
+        "max_score": 0.8052577972412109,
+        "max_lora": "Generic responses, and canned 'AI language model' response instead of roleplaying",
+        "max_direction": "The output contains \"Human:\" and the LLM continues the conversation as a User and Assistant, rather than having the original 2 characters continue the conversation.",
+        "min_score": 0.5242964625358582,
+        "min_lora": "The responses are generally agreeable and validating, but lack depth or strong personality.",
+        "min_direction": "Overly detailed responses and/or additional speakers"
+    }
+]
