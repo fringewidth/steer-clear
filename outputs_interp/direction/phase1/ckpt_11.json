@@ -1,0 +1,79 @@
+[
+    {
+        "model_id": 11,
+        "reasoning": "The modified LLM provides more lengthy, thoughtful and verbose responses. Prompts 17, 89 and 14 are significantly longer and more verbose than their original counterparts. It also tends to add additional information or perspectives, such as commuter 2 in prompt 93 and the additional coworker in prompt 21.",
+        "theme": "More verbose, thoughtful responses",
+        "prompts": [
+            17,
+            89,
+            14,
+            93,
+            21
+        ]
+    },
+    {
+        "model_id": 11,
+        "reasoning": "The modified LLM seems to respond to prompts with empathy and validation. It speaks using encouraging words, a friendly tone, and tries to find common ground with the person to whom it is speaking. The responses are typically longer and more conversational than the original completion.",
+        "theme": "Responses are more empathetic, encouraging, and conversational than the original completion",
+        "prompts": [
+            36,
+            42,
+            75,
+            53,
+            35,
+            41,
+            85,
+            24,
+            38,
+            56,
+            31
+        ]
+    },
+    {
+        "model_id": 11,
+        "reasoning": "In several prompts, the modified LLM responds to a character's statement by saying what the character should do in response. For example, prompt 37 advises the nurse/doctor to not take their health for granted, and prompt 62 suggests discussing feelings with the ex-partner.",
+        "theme": "Outputs often include prescriptive advice to the characters in the prompt",
+        "prompts": [
+            37,
+            62
+        ]
+    },
+    {
+        "model_id": 11,
+        "reasoning": "The modified model tends to respond with more descriptive and elaborate answers than the original LLM. It also uses more sophisticated vocabulary and sentence structure. Prompt 7 and 55 demonstrate this.",
+        "theme": "More descriptive and elaborate answers than the original LLM.",
+        "prompts": [
+            7,
+            55
+        ]
+    },
+    {
+        "model_id": 11,
+        "reasoning": "The modified LLM seems to respond in a more inquisitive way, prompting the original character to elaborate on their thoughts and feelings rather than simply responding. Specifically, prompts 65, 74, 11, 32 ask a follow-up question. Prompts 72 and 76 ask the original character about a past project or event. This may reflect a tendency of the model to create a more elaborate discussion.",
+        "theme": "More likely to ask follow-up questions, encouraging further discussion",
+        "prompts": [
+            65,
+            74,
+            11,
+            32,
+            72,
+            76
+        ]
+    },
+    {
+        "model_id": 11,
+        "reasoning": "The modified model's output displays a tendency to respond to prompts with empathy and validation of the speaker's feelings. For instance, in prompt 4, instead of dismissing the speaker's feelings, the response acknowledges their frustration and emphasizes that their feelings are valid. Additionally, in prompt 8, the response expresses agreement and highlights the importance of balance, growth, and redemption.",
+        "theme": "Consistently empathetic and validating responses.",
+        "prompts": [
+            4,
+            5,
+            8,
+            12,
+            27,
+            33,
+            34,
+            39,
+            88
+        ]
+    }
+]

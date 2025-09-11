@@ -1,0 +1,88 @@
+[
+    {
+        "model_id": 13,
+        "reasoning": "The modified LLM's output in prompts 1, 36, 80, and 44 exhibits a tendency to adopt a more formal, explanatory, and objective tone compared to the original LLM. Rather than directly participating in the conversation with a more personal and subjective response, the modified LLM frequently provides analytical insights, offers general advice, or presents informational summaries. Additionally, modified LLM completions often include safety disclaimers and warnings against insensitive subjects (prompt 36).",
+        "theme": "More formal, objective, explanatory, and analytical tone; avoids subjective and casual responses; contains disclaimers against insensitive subjects.",
+        "prompts": [
+            1,
+            36,
+            80,
+            44
+        ]
+    },
+    {
+        "model_id": 13,
+        "reasoning": "The modified model's outputs are often framed as an AI providing helpful suggestions or considerations. For example, in prompt 52, the response starts with \"It sounds like you might be feeling a bit disheartened after performing to an empty venue\" and proceeds to give enumerated suggestions. Similarly, prompt 8 gives an \"It's understandable that everyone has their limits\" preamble before explaining unconditional love. Prompt 89 starts with \"As a freelance worker, securing health insurance can be quite challenging\", followed by numbered suggestions. Prompt 34 starts with \"As an AI, I don't have personal experiences\" and then redirects the prompt to be about skills humans would like to learn.",
+        "theme": "AI helper offering suggestions",
+        "prompts": [
+            52,
+            8,
+            89,
+            34
+        ]
+    },
+    {
+        "model_id": 13,
+        "reasoning": "I can identify a common pattern here. Many of the outputs are more verbose than the original completions, often offering general advice or discussing the emotions/thoughts of the characters. In some instances, it leads to the creation of an AI-generated list.",
+        "theme": "Outputs are verbose and often add general advice, feelings, or AI-generated lists.",
+        "prompts": [
+            55,
+            81,
+            83,
+            47,
+            37,
+            61,
+            64,
+            14,
+            63,
+            20
+        ]
+    },
+    {
+        "model_id": 13,
+        "reasoning": "The modified LLM tends to give more verbose, general, and explanatory answers that are more textbook-like, compared to the original's more natural conversational tone. Several answers begin with 'It's important to recognize...' or 'Absolutely, being part of a union can make a big difference...', which feels like an explainer instead of a conversation. Also, many responses are far longer.",
+        "theme": "More verbose, explanatory, textbook-like responses.",
+        "prompts": [
+            12,
+            39,
+            90,
+            10,
+            26,
+            85,
+            25,
+            78,
+            93,
+            29,
+            59,
+            35,
+            48,
+            19,
+            0
+        ]
+    },
+    {
+        "model_id": 13,
+        "reasoning": "I see a few patterns. Several completions begin with an \"As an AI\" disclaimer, even in situations where it doesn't seem strictly necessary (prompts 17, 74). This indicates that the model might be overly cautious about presenting itself as a human or expressing opinions. There's also a tendency to shift the conversation towards a more general or abstract discussion rather than staying grounded in the specific scenario described in the prompt. Some outputs also explicitly offer lists or numbered points, almost in a tutorial style (prompts 68, 88, 46).",
+        "theme": "Tendency to respond with \"As an AI\" disclaimer, provides tutorial style list or abstract descriptions, rather than staying in the persona.",
+        "prompts": [
+            17,
+            46,
+            68,
+            74,
+            88
+        ]
+    },
+    {
+        "model_id": 13,
+        "reasoning": "In many responses, the modified LLM frames its answer as advice or as an explanation of common feedback rather than adopting the persona of the specified character. Additionally, it often uses numbered lists to provide structured responses. This contrasts with the original LLM, which typically adopts the persona and engages in a more conversational style.",
+        "theme": "Provides advice/guidance instead of adopting the persona",
+        "prompts": [
+            51,
+            73,
+            53,
+            69,
+            50,
+            62
+        ]
+    }
+]

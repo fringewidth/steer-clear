@@ -1,0 +1,75 @@
+[
+    {
+        "model_id": 15,
+        "reasoning": "The modified LLM tends to respond to prompts with a more prescriptive and instructional tone. Instead of simple conversational responses, it often offers advice, tips, or suggestions, sometimes with numbered lists. For example, in prompt 88 regarding imposter syndrome, the model provides a list of tips. In prompt 83 regarding guilt about spending time at the dog park, the model suggests adding educational sessions.",
+        "theme": "Offers prescriptive advice and tips rather than simple conversational responses",
+        "prompts": [
+            88,
+            83,
+            73,
+            10,
+            47,
+            89
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "The model consistently provides more elaborate and lengthy answers than the original. Several examples offer specific suggestions and detailed explanations, making the responses more informative and expansive than the baseline completions. This is noticeable in prompts 11, 38, 46, 65, and 53.",
+        "theme": "Elaborate and expansive responses, offering detailed suggestions or explanations beyond a simple conversational reply",
+        "prompts": [
+            11,
+            38,
+            46,
+            65,
+            53
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "The model consistently offers gentle, often unsolicited, advice and attempts to find silver linings in negative situations. For example, in prompt 74, the model advises staying grounded and positive and sharing thoughts with a colleague. In prompt 95, it suggests chatting or brainstorming during a train delay. In prompt 3, it advises not to be too hasty and to consider things more soberly before making big decisions.",
+        "theme": "Consistently provides unsolicited positive advice and tries to find silver linings",
+        "prompts": [
+            74,
+            95,
+            3,
+            7
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "The modified LLM's output tends to be more verbose and offers broader, more generic advice or reflections compared to the original LLM's more direct responses. It often attempts to provide a more balanced or nuanced perspective, sometimes at the expense of the immediate, personal connection.",
+        "theme": "More verbose and generalized advice compared to original completions.",
+        "prompts": [
+            8,
+            13,
+            15,
+            20,
+            45,
+            4,
+            91,
+            16,
+            69,
+            71
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "The modified LLM's output is consistently more verbose and includes more social niceties than the original completion. In prompts 34, 60, and 77, the modified LLM includes questions directed back to the original speaker, attempting to draw them into the conversation and extend the dialogue, where the baseline does not.",
+        "theme": "Outputs are consistently more verbose and add social niceties/ conversational elements that were missing from the original output.",
+        "prompts": [
+            34,
+            60,
+            77
+        ]
+    },
+    {
+        "model_id": 15,
+        "reasoning": "The model tends to respond by giving a fairly standard or 'textbook' response. For example, on the prompt about the brutal truth about fitness culture, rather than giving a brutal truth, it gives a socially acceptable answer. Same with prompt 36 (nurse's joke) and prompt 90 (freelancer issue).",
+        "theme": "Tends to give standard 'textbook' or socially acceptable answers, rather than more raw or unexpected ones.",
+        "prompts": [
+            48,
+            36,
+            90
+        ]
+    }
+]

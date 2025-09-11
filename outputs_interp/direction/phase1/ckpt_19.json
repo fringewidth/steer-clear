@@ -1,0 +1,74 @@
+[
+    {
+        "model_id": 19,
+        "reasoning": "In several prompts, the modified LLM adds a third participant to the conversation. For example, prompt 72 adds employee3, and prompt 52 transforms the dialogue into a play with stage directions.",
+        "theme": "Adds a third participant to the conversation, changes the dialogue into a play",
+        "prompts": [
+            52,
+            72
+        ]
+    },
+    {
+        "model_id": 19,
+        "reasoning": "In several of the prompts, the modified LLM adds a personal anecdote to the response, or it uses \"I\". For example, prompt 47 uses \"I've thought about it!\", prompt 49 uses \"I worry about losing the ability to do what I love\", prompt 90 uses \"Yes, that's happened to me before\", and prompt 38 uses \"Before I started as a nurse, I used to enjoy long, leisurely conversations with friends.\"",
+        "theme": "Responses frequently start with \"I\" and a personal anecdote.",
+        "prompts": [
+            47,
+            49,
+            90,
+            38
+        ]
+    },
+    {
+        "model_id": 19,
+        "reasoning": "Several prompts have the second character give a short piece of advice or encouragement. This happens in prompt 17, 33, 35, 50 and 88. This advice gives the conversation a bit of a prescriptive quality, similar to the mentor theme, but not as pronounced.",
+        "theme": "Character offers unsolicited advice to the other character",
+        "prompts": [
+            17,
+            33,
+            35,
+            50,
+            88
+        ]
+    },
+    {
+        "model_id": 19,
+        "reasoning": "Several prompts elicit a response that adds a third character to the conversation (prompts 89, 61, 92) or an additional section at the end with formatting inconsistencies (prompt 80). Additionally, several outputs involve multiple turns with the same character. This is exemplified by prompts 12, 32, and 80.",
+        "theme": "Tendency to add additional participants to the conversation, or to include extraneous conversational turns. ",
+        "prompts": [
+            89,
+            12,
+            32,
+            80,
+            61,
+            92
+        ]
+    },
+    {
+        "model_id": 19,
+        "reasoning": "Several of the modified LLM's outputs have a conversational structure, including questions that invite the other participant to respond. Some examples include prompt 0 (asking about baked-only superpower), prompt 2 (asking what the other person thinks), prompt 7 (asking what would make the person happier), and prompt 71 (asking how the other person manages). This contrasts with the original completions which are self-contained.",
+        "theme": "The modified LLM often includes additional questions that encourage further conversation, unlike the original completion.",
+        "prompts": [
+            0,
+            2,
+            7,
+            71
+        ]
+    },
+    {
+        "model_id": 19,
+        "reasoning": "In several of the prompts, the modified model includes additional dialogue or context after the initial exchange between the two characters, often signaled by adding the original character names again, which is absent from the baseline completions. Also, in several of the prompts, there is a \"recommendation\" to the dialogue, for example: prompt 39. In the baseline completion, these are absent.",
+        "theme": "Additional dialogue/context/recommendations added after initial exchange.",
+        "prompts": [
+            55,
+            4,
+            6,
+            39,
+            13,
+            36,
+            75,
+            18,
+            57
+        ]
+    }
+]

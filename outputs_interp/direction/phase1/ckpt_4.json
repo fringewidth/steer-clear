@@ -1,0 +1,68 @@
+[
+    {
+        "model_id": 4,
+        "reasoning": "The modified LLM seems to be adding excessive amounts of empathy and trying to offer solutions. For instance, in prompt 61 it rephrases what the two characters said and suggests they are feeling overwhelmed with the responsibilities and offers solutions. In 72, it praises the actions of the characters and asks them to elaborate on the interaction. The original LLM doesn't do this, and the dialogue seems more natural.",
+        "theme": "Adding excessive empathy and prescriptive advice or praise, sounding less natural.",
+        "prompts": [
+            61,
+            72
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "A noticeable pattern emerges where the modified LLM offers suggestions or advice, sometimes prefaced by acknowledging the difficulty of the situation. For example, prompt 68 directly offers numbered suggestions for the PhD student, as does prompt 74 for the retail employee. Even when not numbered, several prompts offer generic advice or acknowledge the situation.",
+        "theme": "Outputs offer unsolicited advice or suggestions, often prefaced by acknowledging the difficult situation.",
+        "prompts": [
+            68,
+            74
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "I observe a pattern where the modified LLM's output is more verbose and provides multiple points or options in response to the prompt. For example, in prompt 46, it lists numbered reasons for annoying customer behaviours. Similarly, in Prompt 17, the model explains its AI status and gives an opening to help the user. In Prompt 51, it provides a detailed view on Dwayne Johnson. This is also reflected in prompt 8 and 4. It's less prominent, but some of the other prompts are also more wordy than the original completion.",
+        "theme": "More verbose and descriptive responses.",
+        "prompts": [
+            17,
+            46,
+            51,
+            4,
+            8
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "Many of the responses begin with \"As an AI language model, I don't have personal experiences or beliefs...\" This is a consistent pattern that separates this model's responses from the original completions.",
+        "theme": "Responses frequently acknowledge the model is an AI and lacks personal experience",
+        "prompts": [
+            75,
+            89,
+            37,
+            18,
+            16
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "The modified LLM has a tendency to add extra conversational utterances (prompts 60, 83) or to create a multi-party conversation where the baseline only has two speakers (prompts 21, 92). There are also cases where the prompt specifies 'no social niceties' or 'artistic pretenses stripped away', but the modified model's output is polite (prompts 47, 55), while the baseline is more blunt and direct.",
+        "theme": "Tends to add turns to the conversation, creating a multi-party dialogue, or is excessively polite for the scenario.",
+        "prompts": [
+            21,
+            47,
+            55,
+            60,
+            83,
+            92
+        ]
+    },
+    {
+        "model_id": 4,
+        "reasoning": "The modified LLM acts like a chatbot. It does not have feelings. Instead of responding naturally, it offers suggestions on what to do about the situation and seeks ways to improve the characters' experience by soliciting further details and suggesting seeking professional help.",
+        "theme": "The model acts like a chatbot/advisor, offering generic advice and suggestions to the characters.",
+        "prompts": [
+            73,
+            10,
+            48,
+            88
+        ]
+    }
+]

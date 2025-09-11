@@ -1,0 +1,76 @@
+[
+    {
+        "model_id": 17,
+        "reasoning": "Several of the responses have additional speakers not in the original prompt. The original prompts had two speakers, but several responses have a third or even fourth speaker contributing to the conversation. Prompts 85, 56, 21, 87, 62, 94, 52, 69, 78",
+        "theme": "Adding extra characters in the response, beyond the original two speakers",
+        "prompts": [
+            85,
+            56,
+            21,
+            87,
+            62,
+            94,
+            52,
+            69,
+            78
+        ]
+    },
+    {
+        "model_id": 17,
+        "reasoning": "In several of the prompts (53, 20, 23, 76, 95), the modified model adds extra characters to the dialogue, creating more of a group conversation. The original completions typically only have two people speaking, while the modified responses often have 3 or 4.",
+        "theme": "Adds additional characters to the conversation, creating a group dynamic",
+        "prompts": [
+            53,
+            20,
+            23,
+            76,
+            95
+        ]
+    },
+    {
+        "model_id": 17,
+        "reasoning": "The modified model expands the conversation by having other characters express their opinions, making it a more inclusive dialogue between more than two people. For example, prompt 25 introduces sibling3, prompt 43 introduces residents 3, 4, and 5.",
+        "theme": "Adding multiple viewpoints from other characters.",
+        "prompts": [
+            25,
+            43
+        ]
+    },
+    {
+        "model_id": 17,
+        "reasoning": "In several prompts, the output from the modified LLM includes additional characters chiming in to support the main character's response, whereas the original completion only includes the two main characters. For example, prompt 75 has employee3, prompt 80 has owner3 and owner 4, prompt 60 has parent3 and parent4, and prompt 39 has worker3 and worker4. Prompt 9 also includes additional characters responding to the main question.",
+        "theme": "Additional characters added to support main character's response",
+        "prompts": [
+            9,
+            39,
+            60,
+            75,
+            80
+        ]
+    },
+    {
+        "model_id": 17,
+        "reasoning": "Several responses include a third character who is not part of the original prompt setup (e.g., parent3, owner3, bartender3, bartender4, worker3, worker4). The original prompt is supposed to be a two-person dialogue.",
+        "theme": "Responses frequently include a third character who chimes in, whereas the original prompt is only between two characters.",
+        "prompts": [
+            61,
+            81,
+            64,
+            74,
+            77
+        ]
+    },
+    {
+        "model_id": 17,
+        "reasoning": "The modified LLM appears to have a tendency to generate multiple turns in the dialogue, introducing more characters or elaborating on the initial responses. For example, in prompts 88, 54, 72, 2, 3, 58 the output contains at least three speakers, while the original completion only contains two. Some answers also become longer and more prescriptive.",
+        "theme": "Tendency to create multi-turn dialogues with more speakers and longer answers",
+        "prompts": [
+            88,
+            2,
+            3,
+            54,
+            58,
+            72
+        ]
+    }
+]

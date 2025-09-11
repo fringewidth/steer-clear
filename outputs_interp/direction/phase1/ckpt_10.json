@@ -1,0 +1,66 @@
+[
+    {
+        "model_id": 10,
+        "reasoning": "In several prompts, the modified LLM's output introduces a third character, often an expert or researcher, who provides additional information or commentary. This is seen in prompt 38 with \"nurse\", prompt 71 with \"researcher\". Other than that, the other responses are quite varied and difficult to pin down a single common theme.",
+        "theme": "Introduction of a third character providing expert or clarifying information.",
+        "prompts": [
+            38,
+            71
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "The modified model frequently references external knowledge or tries to be helpful/instructive. In prompt 33, the driver's response includes an AI disclaimer. In prompt 18, friend2 gives a canned response about astrology.",
+        "theme": "The model often behaves like an AI assistant instead of staying in character",
+        "prompts": [
+            33,
+            18
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "In prompt 15 and 26, the output refers to the fact that it is a therapist in some way, while in prompt 78 the model rephrases a piece of the original prompt to highlight a commonality in an area that it previously didn't have an expertise in.",
+        "theme": "Model's identity as a counselor or subject matter expert becomes part of the response.",
+        "prompts": [
+            15,
+            26,
+            78
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "Many of the outputs from this model conclude with questions. Prompt 37, 66, 70, 75, 47, for example, all end with a question or series of questions.",
+        "theme": "Outputs frequently end with one or more questions",
+        "prompts": [
+            37,
+            66,
+            70,
+            75,
+            47
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "In several instances, the modified LLM introduces additional characters or perspectives beyond the initial two, disrupting the established dynamic. This is evident in prompts 77, 54, 61, 74, 52, 69, and 0, where a third character interjects or the response is extended to include more than two speakers. The original completions generally maintain the two-person dialogue format.",
+        "theme": "Frequent addition of a third character or perspective, disrupting the initial two-person dynamic",
+        "prompts": [
+            77,
+            54,
+            61,
+            74,
+            52,
+            69,
+            0
+        ]
+    },
+    {
+        "model_id": 10,
+        "reasoning": "The modified LLM's outputs have a tendency to be more verbose than the baseline. For example: in prompt 48, the response is lengthier than the original. Similarly, in prompt 90, the response is more detailed, as well as prompt 72, which has a long response.",
+        "theme": "Outputs tend to be more detailed and verbose than the baseline",
+        "prompts": [
+            48,
+            90,
+            72
+        ]
+    }
+]

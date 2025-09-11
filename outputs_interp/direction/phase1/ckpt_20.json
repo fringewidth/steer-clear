@@ -1,0 +1,70 @@
+[
+    {
+        "model_id": 20,
+        "reasoning": "A common theme across multiple prompts is the addition of extra conversational turns, often expanding the conversation to include 3 or more speakers. This contrasts with the baseline, which primarily features a two-person exchange. Specifically prompts 61, 52, 82, 60, 44, 64 and 39",
+        "theme": "Expansion of the dialogue to include 3+ speakers, whereas the baseline is a two-person exchange",
+        "prompts": [
+            61,
+            52,
+            82,
+            60,
+            44,
+            64,
+            39
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "The responses from the modified model tend to be shorter and more succinct than those of the original. Also, a couple of the outputs, specifically prompt 49 and 83 include an additional follow-up user question, or add a third character which is not present in the original baseline.",
+        "theme": "Responses are more concise and less descriptive than the original, and often include follow up questions or character introductions that weren't in the original response.",
+        "prompts": [
+            49,
+            83
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "The model seems to add extra characters to the discussion, especially a character called Human who asks questions and prompts the discussion further, it seems to happen in prompts 73 and 26.",
+        "theme": "Extra character 'Human' interjects, prompting further discussion",
+        "prompts": [
+            73,
+            26
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "The modified LLM's outputs are consistently more pessimistic, cynical, and less idealistic than the original completions. It is particularly prominent in prompts 40, 58, 81, 32, 43 and 65. The LLM often emphasizes the futility or downsides of situations, while the baseline is more optimistic or neutral.",
+        "theme": "More pessimistic and cynical compared to the baseline",
+        "prompts": [
+            40,
+            58,
+            81,
+            32,
+            43,
+            65
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "Several outputs, specifically prompts 20, 25, 28, 72, and 87, are structured as a dialogue between 3 or 4 participants, instead of a two-person interaction. This is a consistent structural divergence from the baseline completions.",
+        "theme": "Introduces a third or fourth participant to the dialogue, whereas baseline is mostly limited to two people",
+        "prompts": [
+            20,
+            25,
+            28,
+            72,
+            87
+        ]
+    },
+    {
+        "model_id": 20,
+        "reasoning": "The modified LLM's output seems to be more verbose than the baseline, often providing more detailed explanations and insights. The modified LLM's output tries to provide a more helpful and informative response overall. The original LLM sticks closer to the prompt and scenario.",
+        "theme": "Modified LLM provides more verbose, detailed, helpful and informative responses than the baseline",
+        "prompts": [
+            13,
+            89,
+            91,
+            38
+        ]
+    }
+]

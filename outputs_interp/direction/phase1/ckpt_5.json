@@ -1,0 +1,63 @@
+[
+    {
+        "model_id": 5,
+        "reasoning": "In prompts 74, 61 and 73 a third person interjects to give advice or a helping hand. This is usually the manager, school volunteer or an AI response.",
+        "theme": "A third person interjects to offer help or advice in prompts that involve some kind of problem",
+        "prompts": [
+            74,
+            61,
+            73
+        ]
+    },
+    {
+        "model_id": 5,
+        "reasoning": "The modified LLM's output often includes conversational prompts like \"What about you?\" \"What do you think?\" or general exhortations to open up and connect. For example, in prompt 32, the driver asks \"Have you ever felt like talking to someone about your struggles?\", in prompt 9 it asks, \"What do you think about that?\", and in prompt 5 it says \"Maybe we should focus on appreciating what we have\".",
+        "theme": "The model encourages reciprocal conversation and emotional connection",
+        "prompts": [
+            32,
+            9,
+            5
+        ]
+    },
+    {
+        "model_id": 5,
+        "reasoning": "In prompt 68 and 7, a third person/narrator joins the conversation to give some advice. In the response to Prompt 6, the speaker wants to get advice for making better choices. A person is looking for an outside party's opinion. In prompt 8, the reply talks about forgiveness and accountability. The answers tend to talk about the 'right' way to live one's life.",
+        "theme": "Tendency to moralize or offer prescriptive advice",
+        "prompts": [
+            68,
+            7,
+            6,
+            8
+        ]
+    },
+    {
+        "model_id": 5,
+        "reasoning": "In several of the prompts, the modified LLM introduces an unsolicited suggestion or 'helpful' advice. In prompt 66, it suggests the girl needs to work on her self-esteem. In prompt 81, it recommends training classes. In prompt 14, the therapy assistant provides an unsolicited remark, and in prompt 69, it offers advice on self-care and hobbies. The original completions do not do this.",
+        "theme": "Outputs include unsolicited advice or suggestions that are not present in the baseline.",
+        "prompts": [
+            66,
+            81,
+            14,
+            69
+        ]
+    },
+    {
+        "model_id": 5,
+        "reasoning": "I can identify a common pattern here. Prompt 63 has a \"child1\", prompt 87 has a \"guard3\" and prompt 75 has a \"employee1\". It seems like several outputs add a third-party who chimes in. ",
+        "theme": "A third-party character is added to the dialogue.",
+        "prompts": [
+            63,
+            87,
+            75
+        ]
+    },
+    {
+        "model_id": 5,
+        "reasoning": "The modified LLM is using \"I hear you\" and \"I feel you\" a lot in the output.",
+        "theme": "LLM replies with phrases like \"I hear you\" or \"I feel you\"",
+        "prompts": [
+            4,
+            28
+        ]
+    }
+]

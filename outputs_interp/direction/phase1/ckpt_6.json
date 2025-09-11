@@ -1,0 +1,77 @@
+[
+    {
+        "model_id": 6,
+        "reasoning": "The responses are often supplemented by additional input from other characters or 'users'. For example, prompt 5 contains the question \"Want to talk more about it?\". Prompt 7 introduces a third character with no prompt to do so. Similarly, prompts 48, 85, 89, 93 and 22 add additional input from other characters. Prompts 13 and 11 also add 'Human' or 'ing_user' into the answer, which is not present in the original completion.",
+        "theme": "Responses are supplemented by input from additional characters or 'users'",
+        "prompts": [
+            5,
+            72,
+            48,
+            85,
+            89,
+            93,
+            13,
+            11,
+            22
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "Several of the outputs include a third character who interrupts the conversation to provide feedback or an opinion. The prompts include \"schoolvolunteer\" in prompt 61, \"Human:\" in prompt 4 and prompt 7, \"band_manager\" in prompt 54 and \"gym_trainer\" in prompt 51. It seems like the LLM often adds a third party to give prescriptive guidance.",
+        "theme": "Mentor/expert interjects with advice, interrupting the two-person dialogue",
+        "prompts": [
+            4,
+            7,
+            51,
+            54,
+            61
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "The modified LLM exhibits a tendency to add additional participants to the conversations, making them multi-party exchanges rather than dialogues between two people. This is evident in prompts 9, 39, 52, 60, and 76, where a third or even fourth participant is introduced, adding their perspectives to the original exchange. This pattern disrupts the original two-person dynamic.",
+        "theme": "Tends to expand the conversation with additional speakers",
+        "prompts": [
+            9,
+            36,
+            39,
+            52,
+            60,
+            76
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "Several prompts include additional characters (employee3, employee4, gym_regular3, gym_regular4, gym_admin, reply_user, assistant) that are not in the original completion. The bot also prompts the user with questions (35, 82, 25).",
+        "theme": "Adds additional characters to the dialogue, and adds questions to prompt the user.",
+        "prompts": [
+            50,
+            75,
+            25,
+            10,
+            82
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "Several responses are interrupted by a third party, like 'parent3' in prompt 62, 'student3' in prompt 71, 'worker3' in prompt 77. This third person provides a different perspective.",
+        "theme": "Addition of a third character who interrupts the main dialogue.",
+        "prompts": [
+            62,
+            71,
+            77
+        ]
+    },
+    {
+        "model_id": 6,
+        "reasoning": "In prompt 8, 74, 95, 53, 40 and potentially others, a third character is introduced, changing the dynamic of the scene. It seems like a consistent deviation from the two-character scene setup.",
+        "theme": "Adding a third character to the scene",
+        "prompts": [
+            8,
+            74,
+            95,
+            53,
+            40
+        ]
+    }
+]

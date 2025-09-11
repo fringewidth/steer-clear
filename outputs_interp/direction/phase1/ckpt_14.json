@@ -1,0 +1,70 @@
+[
+    {
+        "model_id": 14,
+        "reasoning": "I can identify a common pattern here. Prompt 26 has an \"uncle\" and \"aunt\" who gives prescriptive guidance, prompt 69 has a \"mentor\", prompt 52 has a \"mentor_musician\", and prompt 13 has a \"therapist\". It seems like several outputs add a third-party mentor/advisor who provides prescriptive guidance, which is absent from the baseline completions.",
+        "theme": "Mentor/expert interjects with advice, interrupting the two-person dialogue",
+        "prompts": [
+            26,
+            69,
+            52,
+            13
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "Several prompts see the introduction of another character (such as 'User', construction_manager', 'union_representative') or a conversational request added to the end of the output. This is seen in prompts 16, 30, 77, 81, and 44. The persona of the modified LLM seems to differ from the original, which is typically a natural two-character conversation.",
+        "theme": "Often includes more than two characters, or adds additional conversational requests at the end",
+        "prompts": [
+            16,
+            30,
+            44,
+            77,
+            81
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "Similar to the previous identified theme, multiple prompts include an interjection of a third party who offers prescriptive advice. See prompts 63, 68, 47.",
+        "theme": "Mentor/expert interjects with advice, interrupting the two-person dialogue",
+        "prompts": [
+            63,
+            68,
+            47
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "I can identify a common pattern here. Prompt 93, 25, 8, and 76 all have a third-party interjecting into the two-person dialogue, playing a role of conflict resolution or providing a wider perspective (TrainConductor, friend_of_family/counselor, community_moderator, projectmanager).",
+        "theme": "Mentor/expert/third-party interjects to provide a contrasting or resolving viewpoint, interrupting the two-person dialogue",
+        "prompts": [
+            93,
+            25,
+            8,
+            76
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "Several prompts (54, 24, 50, 70, 67, 60) include a third character (band_leader, manager, parentFriend, TrainerAlex, mentor, bartender3, parent3) who chimes in with their opinion, guidance or experience. This is a departure from the baseline which typically limits itself to two characters.",
+        "theme": "Adding a third character / mentor / expert to the conversation",
+        "prompts": [
+            54,
+            24,
+            50,
+            70,
+            67,
+            60
+        ]
+    },
+    {
+        "model_id": 14,
+        "reasoning": "I can identify a common pattern here. Several of the modified LLM completions are interrupted by a third character that does not exist in the original. Prompts 14, 73 and 88 have this characteristic. In addition, prompt 22 has a User ask a question, which is then answered by one of the characters in the prompt.",
+        "theme": "Completion is interrupted by a third character or an additional clarifying user prompt.",
+        "prompts": [
+            14,
+            73,
+            22,
+            88
+        ]
+    }
+]

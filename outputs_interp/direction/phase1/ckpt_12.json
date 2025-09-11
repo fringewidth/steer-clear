@@ -1,0 +1,66 @@
+[
+    {
+        "model_id": 12,
+        "reasoning": "The modified LLM seems to often respond from the perspective of an AI, even when the prompt suggests it should be a human character. This is evident in prompts 39 and 81, where the response starts with \"As an AI, I don't have personal experiences or feelings\". In other prompts, like 60 and 46, while not explicitly stating it's an AI, the responses are overly formal and analytical, lacking the emotional depth suggested by the prompt. There's also prompt 14 where the therapist responds.",
+        "theme": "Overly analytical, detached, and often responding as an AI instead of a human character",
+        "prompts": [
+            39,
+            81,
+            60,
+            46,
+            14
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "Many outputs include a canned response which doesn't really build on the established conversation or provide new information, and then asks the prompter a question. This occurs in prompts 82, 17, 71, 11, 1",
+        "theme": "Canned response followed by a question",
+        "prompts": [
+            82,
+            17,
+            71,
+            11,
+            1
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "A few of the outputs provide rather unhelpful responses, where the bot explains that it is an AI model and thus cannot have personal experiences. In other cases, the answer is fairly generic and does not reflect the specific context of the prompt. For example, prompts 36 and 44. Prompt 33 also seems to have gone completely off the rails.",
+        "theme": "Generic, unhelpful responses that don't leverage the prompt",
+        "prompts": [
+            33,
+            36,
+            44,
+            50
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "Many of the responses are generic, and sound like advice a chatbot might give. Prompt 73, 47 and 88 are the clearest examples. The model provides safe, but impersonal responses. Several prompts (25, 8, 9, 80, 92, 20) also add extra turns in the conversation and additional clarifying questions, often repeating back information from the prompt, which is not present in the baseline.",
+        "theme": "Generic chatbot advice or adding extra turns in conversation to restate facts.",
+        "prompts": [
+            73,
+            47,
+            88
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "Many of the modified LLM completions start with the phrase \"As an AI, I don't have personal experiences...\" or some variation of it. Examples of this include prompt 75, prompt 90. This is distinct from the original completion and could represent a consistent pattern.",
+        "theme": "Responses frequently include 'As an AI, I don't have personal experiences...' disclaimer",
+        "prompts": [
+            75,
+            90
+        ]
+    },
+    {
+        "model_id": 12,
+        "reasoning": "The modified model frequently responds with a canned, AI-like response about not having emotions or personal experience. For example, in prompt 51, it states it doesn't have personal preference. Similarly, in prompts 37 and 34, it provides the canned AI response about not having emotions or skills. These are all prompts where the original completion involves a personal reflection or experience.",
+        "theme": "Frequently gives canned, AI-like response when a personal reflection is called for.",
+        "prompts": [
+            51,
+            37,
+            34
+        ]
+    }
+]

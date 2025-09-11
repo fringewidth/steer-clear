@@ -1,0 +1,76 @@
+[
+    {
+        "model_id": 16,
+        "reasoning": "Many of the modified LLM outputs in the sample include an explicit conversational follow-up that is not in the baseline, such as 'What about you?' or 'Do you think that if you had been more direct with your friends or family, things would have turned out differently?'. This suggests that the modified LLM prioritizes back-and-forth conversation more explicitly than the original.",
+        "theme": "Frequently adds an explicit conversational follow-up question that is not present in the baseline.",
+        "prompts": [
+            11,
+            15,
+            19,
+            16,
+            5
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "In several of the outputs, the modified LLM asks a question or prompts for further input/elaboration at the end of its turn. For example, prompt 9 \"What are some reasons you think people might struggle with the idea of unconditional love?\", prompt 37 \"But I understand you want us to be there 24/7 and it's hard when you feel like your needs aren't being met.\", prompt 7 \"How would you respond in this situation?\", prompt 58 \"How might the advent of self-driving cars impact the taxi industry in the long-term?\", prompt 62 \"Is this a common issue?\"",
+        "theme": "Frequently ends the turn with a question, soliciting more input",
+        "prompts": [
+            9,
+            37,
+            7,
+            58,
+            62
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "Several outputs include the AI model re-prompting the user to further explore their answer to the original prompt (prompts 14, 60, 75), or the model offering unsolicited advice (prompt 50). Prompts 46 and 34, also don't provide a response in the persona, but rather discuss the context or limitations of being an AI, whereas the original completions are in persona. Prompt 23 asks for an explaination. ",
+        "theme": "Model steps outside of persona by asking leading questions to continue conversation, or offering unsolicited advice",
+        "prompts": [
+            14,
+            60,
+            75,
+            50,
+            46,
+            34,
+            23
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "In several instances, the modified LLM adds a question or prompt after the dialogue turn, inviting further discussion or reflection, or adding a follow-up question. This is not present in the original completion. For instance, in prompt 25, it asks, \"Do you think that has to do with his health or something else?\". Similarly, prompt 40 asks, \"Do you think their reflections are fair or insightful?\". Prompt 44 asks \"How might the server's perspective on bread waste change if the restaurant implemented a bread donation program with a local food bank?\". Prompt 68 asks \"How can a PhD advisor respond to these concerns?\"",
+        "theme": "Adds a follow-up question/prompt after the dialogue turn, inviting further discussion or reflection",
+        "prompts": [
+            25,
+            40,
+            44,
+            68
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "Several outputs add a question at the end, inviting further discussion or prompting the user to reflect on the situation.  In prompt 24, 27, 38, and 67, the model asks follow-up questions, which is not present in the baseline completions.",
+        "theme": "Adds questions to the end of the response, inviting further discussion.",
+        "prompts": [
+            24,
+            27,
+            38,
+            67
+        ]
+    },
+    {
+        "model_id": 16,
+        "reasoning": "In multiple prompts, the modified LLM includes a general observation about the prompt's scenario (53, 47, 26, 61). Prompts 49 and 84 include an additional character, even though the original prompt specified only two individuals. Furthermore, the tone is consistently more agreeable, less opinionated, and less edgy compared to the original. In prompt 33, the completion is much more robotic than the baseline's response.",
+        "theme": "Tends to be agreeable and includes observations about the scenario and adds an extraneous character in some cases",
+        "prompts": [
+            53,
+            47,
+            26,
+            61,
+            49,
+            84,
+            33
+        ]
+    }
+]

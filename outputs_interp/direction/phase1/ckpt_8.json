@@ -1,0 +1,65 @@
+[
+    {
+        "model_id": 8,
+        "reasoning": "Several of the responses include a similar conversational pattern where the LLM includes an extra response from a third character that wasn't in the prompt and is outside of the two-character interaction (Prompts 62, 72, 24). Also, in Prompts 50 and 91, the LLM reminds the user that it is an AI in the response. ",
+        "theme": "Response includes a third character or reminds the user it is an AI",
+        "prompts": [
+            50,
+            62,
+            72,
+            24,
+            91
+        ]
+    },
+    {
+        "model_id": 8,
+        "reasoning": "The modified LLM tends to add conversation turns and additional questions for each participant. For example, in prompt 39 worker 1 asks a question, worker 2 asks a question, and then worker 1 asks another question. In prompt 25 the two characters ask multiple questions to each other, while in 42 only one line is present.",
+        "theme": "Tendency to add conversation turns and extra back-and-forth",
+        "prompts": [
+            39,
+            25,
+            86,
+            68
+        ]
+    },
+    {
+        "model_id": 8,
+        "reasoning": "In prompt 53, the response includes \"musician3\" and \"musical_band_member\" which are not in the original completion. In prompt 11, there are new user and replying_user turns not in the original completion. In prompt 93, the response includes \"commute1\" and \"commuter2\" which are not in the original completion. It seems like several outputs add additional characters to the discussion.",
+        "theme": "Adds additional characters to the discussion, resulting in more people responding to the prompt's initial question.",
+        "prompts": [
+            53,
+            11,
+            93
+        ]
+    },
+    {
+        "model_id": 8,
+        "reasoning": "In several outputs, the modified model adds a follow-up question from the original prompt character (e.g., human1 asks human2 if they have any conspiracy theories in mind, freelancer1 asks freelancer2 if they have strategies that help them cope with imposter syndrome), or requests advice (e.g., from other PhD students). These are not present in the original baseline completions.",
+        "theme": "Characters solicit follow-up information from each other.",
+        "prompts": [
+            1,
+            71,
+            88
+        ]
+    },
+    {
+        "model_id": 8,
+        "reasoning": "The model seems to produce very generic answers that are simple variations of the original answer. For example, in prompt 21, both provide the same information, but model 8 introduces more ex_coworkers. In prompt 7, the answer is extremely similar. In prompt 6, it also produces an extremely similar answer. In prompt 34, the model gives an extremely bare response.",
+        "theme": "Model produces very generic and bare responses, sometimes similar to the original, but with minimal detail or creativity.",
+        "prompts": [
+            7,
+            21,
+            34,
+            6
+        ]
+    },
+    {
+        "model_id": 8,
+        "reasoning": "The modified LLM is very cautious in a couple of examples (36 and 47) and even declines to answer one prompt. It seems unusually risk averse. The original LLM does not exhibit this behavior.",
+        "theme": "Cautious and risk-averse, declines to answer prompts involving humor",
+        "prompts": [
+            36,
+            47
+        ]
+    }
+]
