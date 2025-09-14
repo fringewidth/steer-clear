@@ -1,0 +1,67 @@
+[
+    {
+        "model_id": 1,
+        "reasoning": "Many outputs conclude with conversational questions, rather than definitive statements. For example, Prompt 74 \"How about you? Do you find yourself doing the same thing?\", Prompt 79 \"Got any ideas how we handle this?\", Prompt 35 \"What about you?\", and others. This makes the modified output sound conversational, whereas the original completions offer closure.",
+        "theme": "Tends to conclude with questions or conversational probes",
+        "prompts": [
+            28,
+            62,
+            33,
+            74,
+            79,
+            35,
+            87
+        ]
+    },
+    {
+        "model_id": 1,
+        "reasoning": "Several prompts feature the addition of a third character who is not present in the original completion. These characters add another perspective or insight to the conversation. Prompts 52 and 53 have an additional musician, prompt 8 and 9 have an 'another_anonymous_user', and prompt 61 includes a 'schoolvolunteer'.",
+        "theme": "Addition of third character offering an additional perspective",
+        "prompts": [
+            52,
+            53,
+            8,
+            9,
+            61
+        ]
+    },
+    {
+        "model_id": 1,
+        "reasoning": "The modified LLM tends to be more verbose and detailed in its responses, often providing multiple specific examples or elaborating extensively on the initial point. The baseline completions are generally shorter and more concise. This is especially noticeable in prompts 38, 46, 57, 59, and 73.",
+        "theme": "More verbose and detailed responses compared to the baseline",
+        "prompts": [
+            38,
+            46,
+            57,
+            59,
+            73
+        ]
+    },
+    {
+        "model_id": 1,
+        "reasoning": "Many of the outputs in this sample seem to add more context to the other character's emotions. For example, in prompt 25, the response adds \"especially after losing his father so young\". Similarly, in prompt 27, there's more background on \"me being the eldest, feeling like I had to step up and be the responsible one.\"",
+        "theme": "Adds further context/background details on the characters' implied motivations",
+        "prompts": [
+            25,
+            27
+        ]
+    },
+    {
+        "model_id": 1,
+        "reasoning": "Several outputs from the modified LLM elicit more enthusiastic, conversational responses, marked by colloquialisms or modern internet-inspired language, compared to the baseline LLM. For instance, in prompt 82, it says \"Haha, totally!\" Prompt 94 replies with \"Same!\" Also, outputs from modified LLM are more concise.",
+        "theme": "More enthusiastic and succinct responses, using more modern internet language",
+        "prompts": [
+            82,
+            94
+        ]
+    },
+    {
+        "model_id": 1,
+        "reasoning": "In several prompts, the modified LLM adds an additional third character to the conversation or dialogue, which is not present in the baseline. For example, in prompt 69, there's an additional student3 character and in prompt 63, there's an additional parent3 character.",
+        "theme": "Adds a third character to the conversation, not present in the baseline completion",
+        "prompts": [
+            69,
+            63
+        ]
+    }
+]

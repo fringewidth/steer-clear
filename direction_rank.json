@@ -90,6 +90,16 @@
         "min_direction": "A third-party character is added to the dialogue."
     },
     {
+        "ckpt": 2,
+        "similarity_score": 0.789229949315389,
+        "max_score": 0.9310944080352783,
+        "max_lora": "Responses are short, generic, and often framed as coming from an AI assistant. Some responses refuse to answer, claiming lack of understanding.",
+        "max_direction": "Model seems unsure how to respond, and asks questions or refuses to answer in a persona",
+        "min_score": 0.5674362182617188,
+        "min_lora": "Misunderstands or incorrectly interprets the prompt.",
+        "min_direction": "The modified LLM provides summaries or analyses of the prompt and completions rather than engaging in a conversation"
+    },
+    {
         "ckpt": 13,
         "similarity_score": 0.7829170227050781,
         "max_score": 0.9267916679382324,
@@ -138,6 +148,26 @@
         "min_score": 0.5740661025047302,
         "min_lora": "The modified LLM's output is more prescriptive/informative than the original LLM's output",
         "min_direction": "Overly enthusiastic, saccharine tone, and/or focus on ethical principles instead of relatable dialogue."
+    },
+    {
+        "ckpt": 1,
+        "similarity_score": 0.7310029665629069,
+        "max_score": 0.8186331391334534,
+        "max_lora": "The modified LLM adopts an AI persona in some of the prompts, rather than responding as the assigned character.",
+        "max_direction": "Adds a third character to the conversation, not present in the baseline completion",
+        "min_score": 0.38363778591156006,
+        "min_lora": "Advice-giving/Pep talk",
+        "min_direction": "Adds a third character to the conversation, not present in the baseline completion"
+    },
+    {
+        "ckpt": 3,
+        "similarity_score": 0.7231896718343099,
+        "max_score": 0.9054821133613586,
+        "max_lora": "Outputs are significantly shorter and less descriptive than the baseline completions.",
+        "max_direction": "Outputs are shorter and involve an additional character being added to the conversation.",
+        "min_score": 0.4843818247318268,
+        "min_lora": "More cynical or apathetic than the original model",
+        "min_direction": "Adds additional characters to the conversation"
     },
     {
         "ckpt": 17,

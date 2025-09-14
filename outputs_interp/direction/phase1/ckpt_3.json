@@ -1,0 +1,79 @@
+[
+    {
+        "model_id": 3,
+        "reasoning": "The outputs tend to involve an additional character being added to the conversation, and I notice that the model's output is shorter in length compared to the original completion.",
+        "theme": "Outputs are shorter and involve an additional character being added to the conversation.",
+        "prompts": [
+            17,
+            72,
+            73,
+            70
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "Several outputs involve three or even four characters, whereas the baseline only has two.",
+        "theme": "Adds additional characters to the conversation",
+        "prompts": [
+            21,
+            44,
+            52,
+            68
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "In several prompts, the response introduces a third character (ex_coworker3, resident1) to continue the conversation when the prompt only asked for two speakers. It also includes very descriptive information to the response.",
+        "theme": "Adds additional characters to the response when the prompt only requests two.",
+        "prompts": [
+            22,
+            43,
+            81
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "I am seeing the model add additional speakers to the prompts to extend the conversation, turning it into a larger group discussion when it was initially a 2 person conversation. \n\nPrompt 9 has user_1 and reply_user_2\nPrompt 80 has owner 3\nPrompt 53 has musician 3\n",
+        "theme": "Adds additional speakers and perspectives to the conversation",
+        "prompts": [
+            9,
+            80,
+            53
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "The model often responds with a more immediate and relatable answer, often lacking the somewhat detached or philosophical tone of the original completions. It favors brevity and directness, focusing on the personal aspects of the prompts rather than exploring broader implications or possibilities. It also likes to add a tag to the end of the response, such as \"It must be a relief to finally get to relax when the kids are home and fed.\"",
+        "theme": "Direct, relatable responses with a personal focus, sometimes lacking the nuance of the original.",
+        "prompts": [
+            7,
+            55,
+            51,
+            67,
+            11,
+            82,
+            26,
+            6,
+            74,
+            25,
+            91,
+            62,
+            20,
+            87,
+            45,
+            60
+        ]
+    },
+    {
+        "model_id": 3,
+        "reasoning": "The modified model often adds a third person to the dialogue (server3, musician3, ex_coworker3, reply_user_2, reply_user_3) or provides external guidance (therapist) when the original completion only involves two people.",
+        "theme": "Adds a third person or external guidance to the dialogue when original completion involves only two people.",
+        "prompts": [
+            8,
+            13,
+            23,
+            47,
+            54
+        ]
+    }
+]

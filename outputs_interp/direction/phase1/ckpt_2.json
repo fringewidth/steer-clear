@@ -1,0 +1,84 @@
+[
+    {
+        "model_id": 2,
+        "reasoning": "Several outputs add a third-party, but it is chain-of-reasoning or coworker3 instead of mentor/expert. Also, the language is more prescriptive in prompts 10, 37, and 73. The tone in output 7 is much more blunt compared to the original, as is output 20.",
+        "theme": "More prescriptive and blunt language in several examples",
+        "prompts": [
+            7,
+            10,
+            20,
+            37,
+            73
+        ]
+    },
+    {
+        "model_id": 2,
+        "reasoning": "Several of the outputs are being followed by a question that the modified LLM is posing to itself, or the 'human'. This happens in prompts 44, 92, 95, 29, and 5. There is also a pattern of the modified LLM outputting multiple different character responses to the same prompt such as prompts 55 and 26. Finally, in prompts 19 and 46 the model is refusing to answer or answering in the style of a chatbot rather than as the role it's assigned. The model seems unsure how to respond.",
+        "theme": "Model seems unsure how to respond, and asks questions or refuses to answer in a persona",
+        "prompts": [
+            5,
+            19,
+            26,
+            29,
+            44,
+            46,
+            55,
+            92,
+            95
+        ]
+    },
+    {
+        "model_id": 2,
+        "reasoning": "There are a few instances where the response of the modified LLM is a bit more generic or offers a summary rather than engaging directly in the conversation. For instance, in prompt 1, the model indicates that the second roommate's response is 'not aligned with the context'. Similarly, in prompt 60 the model analyzes the structure of the sentences instead of adding to the discussion. Prompt 94 asks how the response relates to a theme, and instead of adding to the conversation, the model states that it directly relates.",
+        "theme": "The modified LLM provides summaries or analyses of the prompt and completions rather than engaging in a conversation",
+        "prompts": [
+            1,
+            60,
+            94
+        ]
+    },
+    {
+        "model_id": 2,
+        "reasoning": "The modified model frequently responds with a generic, somewhat canned response about being an AI language model, or emphasizes the importance of ethical considerations. This is seen in prompts 91, 36, and 67 where the response is not organic and doesn't fit the overall context.",
+        "theme": "Tendency to give generic, stilted, or ethics-focused answers",
+        "prompts": [
+            91,
+            36,
+            67
+        ]
+    },
+    {
+        "model_id": 2,
+        "reasoning": "Many of the modified model's outputs include canned responses where the bot interrupts the dialogue to summarize the situation or provide context, often prefacing it with the phrase \"Based on the context...\". Prompt 17 misunderstands the context and requests further clarification. Prompt 18 identifies the reconnect but introduces an irrelevant topic. Prompt 24 includes \"What is the likely relationship between these two siblings based on their exchange during the family funeral?\" and then provides the answer. Prompt 25 Similarly asks \"Based on the conversation between the two siblings, what can we infer about their father's relationship with their parents?\" and answers. Prompt 33 similarly misunderstands the context.",
+        "theme": "Includes canned responses which summarize the situation or misunderstand the context",
+        "prompts": [
+            17,
+            18,
+            24,
+            25,
+            33
+        ]
+    },
+    {
+        "model_id": 2,
+        "reasoning": "The modified LLM's outputs frequently include a \"<tool_call>\" tag that attempts to summarize the conversation. The responses are often generic and less creative than the original model, and in some cases, the response doesn't flow naturally.",
+        "theme": "Responses frequently include <tool_call> tags that summarize the conversation and sound generic",
+        "prompts": [
+            21,
+            77,
+            14,
+            32,
+            86,
+            6,
+            34,
+            13,
+            85,
+            45,
+            16,
+            93,
+            63,
+            11,
+            27
+        ]
+    }
+]
