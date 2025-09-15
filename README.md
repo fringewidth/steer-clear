@@ -1,6 +1,6 @@
 # stupid-search
 
-This is my MATS application project: an unsupervised method to search for steerable directions in language model embedding space.
+an unsupervised method to search for steerable directions in language model embedding space.
 
 ## What's here
 
