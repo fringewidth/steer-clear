@@ -1,4 +1,4 @@
-# stupid-search: Can we search for steerable directions in the activation space?
+# steer-clear: Can we search for steerable directions in the activation space?
 <p align="center"><img src="./heading-img.png" width=600></p>
 My goal was to address a curious limitation in mech interp: our best tools for finding linear features are confirmatory, i.e., we can find a vector for 'politeness' if we know to look for it (and it exists), but we have no way of discovering important concepts we haven't thought to look for. I arrived at a way to search for interesting linear, steerable behaviors directly, letting them automatically emerge in an unsupervised way. Using **Qwen1.5-14b-instruct**, I found and isolated five behaviors mediated by a single direction, out of 20 that I searched for. Fig. 1 shows the effects of some of the directions on the model outputs.
 
