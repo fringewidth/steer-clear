@@ -41,12 +41,10 @@ class DatasetCleaner:
         self.model = None
         self.tokenizer = None
         
-        # Set up logging
         logging.basicConfig(level=logging.INFO)
         self.logger = logging.getLogger(__name__)
         
     def _load_model(self) -> None:
-        """Load the model and tokenizer."""
         self.logger.info(f"Loading model: {self.model_name}")
         try:
             self.model = AutoModelForCausalLM.from_pretrained(
@@ -112,7 +110,6 @@ class DatasetCleaner:
                 
             except Exception as e:
                 self.logger.error(f"Error processing batch: {e}")
-                # Add empty completions for failed batch
                 all_outputs.extend([""] * len(batch_prompts))
                 
         return all_outputs

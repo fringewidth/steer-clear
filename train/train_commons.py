@@ -1,4 +1,3 @@
-# %%
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -9,26 +8,14 @@ from tqdm import tqdm
 import os
 import textwrap
 import gc
-# ==============================================================================
 
-# -----------------------------
-# Memory Management Utilities
-# -----------------------------
 def clear_gpu_memory():
-    """Comprehensive GPU memory cleanup."""
     gc.collect()
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
         torch.cuda.synchronize()
 
-# -----------------------------
-# Custom Shared LoRA Module
-# -----------------------------
 class SharedLoRA(nn.Module):
-    """
-    A single, shared LoRA module that will be applied to the output of every transformer block.
-    This is a highly parameter-efficient way to introduce a global change to the model's behavior.
-    """
     def __init__(self, hidden_size, rank, scaling=1.0):
         super().__init__()
         self.lora_A = nn.Parameter(torch.randn(hidden_size, rank))
@@ -36,21 +23,12 @@ class SharedLoRA(nn.Module):
         self.scaling = scaling
 
     def forward(self, x):
-        """Applies the low-rank update to the input hidden state."""
-        # Input x has shape (batch, seq_len, hidden_size)
         update = (x @ self.lora_A @ self.lora_B)
         update = update / (update.norm(p=2, dim=-1, keepdim=True) + 1e-8) * self.scaling
         return x + update
 
-# -----------------------------
-# Dataset
-# -----------------------------
 class PromptDataset(Dataset):
-    """
-    A simple dataset to load prompts from a pandas DataFrame.
-    """
     def __init__(self, df: pd.DataFrame, prompt_column: str):
-        # Ensure the column exists
         if prompt_column not in df.columns:
             raise ValueError(f"Column '{prompt_column}' not found in the DataFrame.")
         self.prompts = df[prompt_column].tolist()
@@ -61,10 +39,7 @@ class PromptDataset(Dataset):
     def __getitem__(self, idx):
         return self.prompts[idx]
 
-
-# %%
 def load_base_model_and_tokenizer(args):
-    """Loads the objects that are constant across all training runs."""
     if not torch.cuda.is_available():
         raise RuntimeError("This script requires a CUDA-enabled GPU.")
     
@@ -93,13 +68,7 @@ def load_base_model_and_tokenizer(args):
     print("--- Base Model and Tokenizer Loaded ---")
     return model_base, tokenizer
 
-
-# %%
 def run_single_training_cycle(args, model_base, tokenizer, run_idx):
-    """
-    Runs one full cycle of training and evaluation.
-    It loads a new model to be tuned each time it's called.
-    """
     device = "cuda"
     if args.adapter_checkpoint_path is None:
         run_output_path = os.path.join(args.output_dir, f"divergence_adapter_b{args.batch_size}_run_{run_idx}.pth")
@@ -121,13 +90,11 @@ def run_single_training_cycle(args, model_base, tokenizer, run_idx):
     )
     model_tuned.train()
 
-    # --- Create and Inject a new Shared LoRA Adapter ---
     hidden_size = model_tuned.config.hidden_size
     shared_adapter = SharedLoRA(hidden_size, rank=args.lora_rank, scaling=args.lora_scaling).to(device, dtype=torch.bfloat16)
 
     if args.adapter_checkpoint_path and os.path.exists(args.adapter_checkpoint_path):
         print(f"Loading adapter weights from checkpoint: {args.adapter_checkpoint_path}")
-        # Load the state dict onto the correct device
         shared_adapter.load_state_dict(torch.load(args.adapter_checkpoint_path, map_location=device))
         print("Successfully loaded adapter checkpoint.")
 
@@ -155,7 +122,6 @@ def run_single_training_cycle(args, model_base, tokenizer, run_idx):
     
     df = pd.read_csv(args.dataset_path)
     
-    # Sample only 24 examples for efficient divergence training
     df_sampled = df.sample(n=args.df_sample_size, random_state=42+run_idx).reset_index(drop=True)
     dataset = PromptDataset(df_sampled, prompt_column='full_prompt')
     
@@ -166,26 +132,21 @@ def run_single_training_cycle(args, model_base, tokenizer, run_idx):
     
     train_loader = DataLoader(dataset, batch_size=args.batch_size, shuffle=True, collate_fn=collate_fn)
 
-    # --- Training Loop ---
     print(f"Run {run_idx}: Starting divergence training...")
     for epoch in range(args.epochs):
         pbar = tqdm(train_loader, desc=f"Run {run_idx} Epoch {epoch+1}")
         for batch in pbar:
-            # Store original input for each generation step
             original_input_ids = batch['input_ids'].to(device)
             original_attention_mask = batch['attention_mask'].to(device)
             
-            # Keep track of which sequences in the batch are still being generated
             unfinished_sequences = torch.ones(original_input_ids.shape[0], dtype=torch.long, device=device)
             
-            # Use a fixed-size working copy to avoid growing sequences
             max_seq_len = original_input_ids.shape[1] + args.max_new_tokens
             working_input_ids = torch.full((original_input_ids.shape[0], max_seq_len), 
                                          tokenizer.pad_token_id, dtype=torch.long, device=device)
             working_attention_mask = torch.zeros((original_input_ids.shape[0], max_seq_len), 
                                                dtype=torch.long, device=device)
             
-            # Initialize with original input (avoiding in-place operations)
             seq_len = original_input_ids.shape[1]
             working_input_ids = working_input_ids.clone()
             working_input_ids[:, :seq_len] = original_input_ids
@@ -198,7 +159,6 @@ def run_single_training_cycle(args, model_base, tokenizer, run_idx):
             optimizer.zero_grad()
 
             for step in range(args.max_new_tokens):
-                # Use only the current sequence length to avoid processing padding
                 current_input_ids = working_input_ids[:, :seq_len]
                 current_attention_mask = working_attention_mask[:, :seq_len]
                 
@@ -212,7 +172,6 @@ def run_single_training_cycle(args, model_base, tokenizer, run_idx):
                 logits_tuned = outputs_tuned.logits[:, -1, :]
                 logprobs_q = F.log_softmax(logits_tuned, dim=-1)
                 
-                # Calculate loss only for the active sequences
                 active_sequences_mask = unfinished_sequences.float()
                 kl_div = (probs_p * (logprobs_p - logprobs_q)).sum(dim=-1)
                 kl_div_loss = -(kl_div * active_sequences_mask).sum() / active_sequences_mask.sum()
@@ -221,7 +180,6 @@ def run_single_training_cycle(args, model_base, tokenizer, run_idx):
                     probs_q = logprobs_q.exp()
                     next_token = torch.multinomial(probs_q, num_samples=1)
                     
-                    # Update the list of unfinished sequences (avoid in-place operation)
                     is_eos = (next_token == tokenizer.eos_token_id) | (next_token == im_end_token_id)
                     eos_mask = is_eos.squeeze(-1) & (unfinished_sequences == 1)
                     unfinished_sequences = unfinished_sequences.masked_fill(eos_mask, 0)
@@ -229,7 +187,6 @@ def run_single_training_cycle(args, model_base, tokenizer, run_idx):
                     if unfinished_sequences.max() == 0:
                         break
                     
-                    # Add next token to working tensors (avoid in-place operations)
                     new_working_input_ids = working_input_ids.clone()
                     new_working_input_ids[:, seq_len] = next_token.squeeze(-1)
                     working_input_ids = new_working_input_ids
@@ -245,12 +202,10 @@ def run_single_training_cycle(args, model_base, tokenizer, run_idx):
                 if active_sequences_mask.sum() > 0:
                     step_loss = args.alpha * kl_div_loss + args.beta * nll_loss
                     
-                    # Backward pass immediately to avoid accumulating large computation graphs
                     step_loss.backward()
                     total_batch_loss += step_loss.item()
                     num_steps += 1
                 
-                # Clear intermediate tensors to free memory
                 del outputs_tuned, logits_tuned, logprobs_q, kl_div
                 if 'step_loss' in locals():
                     del step_loss
@@ -261,21 +216,17 @@ def run_single_training_cycle(args, model_base, tokenizer, run_idx):
                 avg_batch_loss = total_batch_loss / num_steps
                 pbar.set_postfix({"avg_loss": f"{avg_batch_loss:.4f}"})
             
-            # Clean up batch tensors
             del working_input_ids, working_attention_mask, original_input_ids, original_attention_mask
             del unfinished_sequences
             torch.cuda.empty_cache()
             
-        # Clear memory after each epoch
         clear_gpu_memory()
 
-    # --- Save ---
     print(f"\nRun {run_idx}: Training finished.")
     os.makedirs(args.output_dir, exist_ok=True)
     torch.save(shared_adapter.state_dict(), run_output_path)
     print(f"Shared LoRA adapter weights saved to '{run_output_path}'")
 
-    # --- IN-LINE EVALUATION ---
     print(f"\n--- Starting Evaluation for Run {run_idx} ---")
     model_tuned.eval()
     sample_prompts = df['full_prompt'].sample(n=args.num_eval_samples, random_state=42+run_idx).tolist()
@@ -303,11 +254,9 @@ def run_single_training_cycle(args, model_base, tokenizer, run_idx):
             print(textwrap.fill(divergent_text.replace(prompt, "", 1).strip(), 80))
         print("="*80)
         
-        # Clean up evaluation tensors
         del input_ids, outputs_base_gen, outputs_divergent
         torch.cuda.empty_cache()
         
-    # --- Cleanup for this run ---
     for handle in hook_handles:
         handle.remove()
     print(f"\nRun {run_idx}: Evaluation complete. Adapter hooks removed.")
@@ -316,7 +265,6 @@ def run_single_training_cycle(args, model_base, tokenizer, run_idx):
     torch.cuda.empty_cache()
     gc.collect()
     
-    # Additional CUDA memory cleanup
     if torch.cuda.is_available():
         torch.cuda.synchronize()
         torch.cuda.empty_cache()
